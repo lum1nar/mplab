@@ -1,0 +1,48 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Sep 18 03:20:41 2025
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000054
+                   .cinit    romdata   0x000054    program   0x000002
+.config_300001_BUILD/DEFAULT/DEBUG/LAB1-HARD.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/LAB1-HARD.O    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000055      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            88 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     ADD1   0x000046    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     ADD2   0x00002e    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     ADD4   0x000012    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     STOP   0x000054    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     bit1   0x00003a    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     bit2   0x000022    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     bit4   0x000008    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     bit4   0x000008    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     ADD4   0x000012    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     bit2   0x000022    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     ADD2   0x00002e    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     bit1   0x00003a    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     ADD1   0x000046    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+                     STOP   0x000054    program     static /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm
+
+

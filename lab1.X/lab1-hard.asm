@@ -1,0 +1,70 @@
+List p=18f4520
+    #include<p18f4520.inc>
+        CONFIG OSC = INTIO67
+        CONFIG WDT = OFF
+        org 0x00
+
+
+	
+	CLRF 0x01
+	MOVLW b'00000000'
+	MOVWF 0x00
+
+	MOVLW b'00001111'
+
+	bit4:
+	CPFSGT 0x00
+	    GOTO ADD4
+	
+	GOTO bit2
+	
+	ADD4:
+	    INCF 0x01
+	    INCF 0x01
+	    INCF 0x01
+	    INCF 0x01
+	    RLNCF 0x00
+	    RLNCF 0x00
+	    RLNCF 0x00
+	    RLNCF 0x00    
+	 
+	
+	bit2:
+	MOVLW b'00111111'
+	CPFSGT 0x00
+	    GOTO ADD2
+	
+	GOTO bit1
+	 
+	ADD2:
+	INCF 0x01
+	INCF 0x01
+	RLNCF 0x00
+	RLNCF 0x00
+	
+	GOTO bit1
+	
+	bit1:
+	MOVLW b'01111111'
+	CPFSGT 0x00
+	    GOTO ADD1
+
+	GOTO STOP
+	
+	ADD1:
+	INCF 0x01
+	RLNCF 0x00
+	
+	MOVLW b'00000000'
+	
+	CPFSGT 0x00
+	    INCF 0x01
+	
+	GOTO STOP
+	
+	
+
+
+	STOP:
+	end
+

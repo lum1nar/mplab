@@ -1,0 +1,5 @@
+Warning[205] /home/lum1na/MPLABXProjects/lab1.X/lab1-advanced.asm 1 : Found directive in column 1. (List)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-advanced.asm 8 : Found label after column 1. (initial)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-advanced.asm 17 : Found label after column 1. (start)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-advanced.asm 23 : Found label after column 1. (CLZ)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-advanced.asm 30 : Found label after column 1. (STOP)

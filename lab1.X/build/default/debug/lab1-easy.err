@@ -1,0 +1,4 @@
+Warning[205] /home/lum1na/MPLABXProjects/lab1.X/lab1-easy.asm 1 : Found directive in column 1. (List)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-easy.asm 37 : Found label after column 1. (WRITEFF)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-easy.asm 42 : Found label after column 1. (WRITEONE)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-easy.asm 47 : Found label after column 1. (STOP)

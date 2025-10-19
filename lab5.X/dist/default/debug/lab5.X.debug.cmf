@@ -1,0 +1,433 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug/lab5.X.debug.o
+cinit CODE 0 70C 70C 6 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 6FA 6FA 12 1 2
+cstackCOMRAM COMRAM 1 1 1 1 1 1
+smallconst SMALLCONST 0 600 600 2 1 2
+config CONFIG 4 300000 300000 E 1 1
+$build/default/debug/add.o
+mytext CODE 0 602 602 F8 1 2
+edata EEDATA 3 F00000 F00000 2 1 1
+$/tmp/xcXIdiCIO/driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 7FFC 7FFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-5FF 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-5FF 1
+CONST 712-7FFB 1
+SMALLCONST 712-7FFB 1
+CODE 4-5FF 1
+CODE 712-7FFB 1
+BIGRAM 2-5FF 1
+BIGSFR F80-FFF 1
+COMRAM 2-7F 1
+EEDATA F00002-F000FF 1
+MEDIUMCONST 712-7FFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug/lab5.X.debug.o
+6FA text0 CODE >5:/home/lum1na/MPLABXProjects/lab5.X/main.c
+6FA text0 CODE >7:/home/lum1na/MPLABXProjects/lab5.X/main.c
+704 text0 CODE >8:/home/lum1na/MPLABXProjects/lab5.X/main.c
+70C cinit CODE >401:/tmp/xcXIdiCIO/driver_tmp_1.s
+70C cinit CODE >403:/tmp/xcXIdiCIO/driver_tmp_1.s
+70C cinit CODE >406:/tmp/xcXIdiCIO/driver_tmp_1.s
+70C cinit CODE >412:/tmp/xcXIdiCIO/driver_tmp_1.s
+70C cinit CODE >414:/tmp/xcXIdiCIO/driver_tmp_1.s
+70E cinit CODE >415:/tmp/xcXIdiCIO/driver_tmp_1.s
+$build/default/debug/add.o
+602 mytext CODE >13:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+604 mytext CODE >14:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+606 mytext CODE >15:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+608 mytext CODE >15:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+60A mytext CODE >17:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+60C mytext CODE >17:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+60E mytext CODE >18:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+610 mytext CODE >18:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+612 mytext CODE >19:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+614 mytext CODE >20:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+616 mytext CODE >21:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+618 mytext CODE >22:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+61A mytext CODE >25:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+61C mytext CODE >26:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+61E mytext CODE >27:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+620 mytext CODE >30:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+622 mytext CODE >31:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+624 mytext CODE >34:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+626 mytext CODE >34:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+628 mytext CODE >35:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+62A mytext CODE >35:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+62C mytext CODE >40:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+62E mytext CODE >40:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+630 mytext CODE >41:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+632 mytext CODE >44:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+634 mytext CODE >45:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+636 mytext CODE >46:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+638 mytext CODE >47:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+63A mytext CODE >49:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+63C mytext CODE >49:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+63E mytext CODE >50:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+640 mytext CODE >50:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+642 mytext CODE >52:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+646 mytext CODE >53:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+64A mytext CODE >55:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+64C mytext CODE >58:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+64E mytext CODE >63:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+650 mytext CODE >63:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+652 mytext CODE >65:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+654 mytext CODE >66:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+656 mytext CODE >67:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+658 mytext CODE >68:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+65A mytext CODE >69:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+65E mytext CODE >70:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+662 mytext CODE >72:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+666 mytext CODE >73:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+668 mytext CODE >76:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+66A mytext CODE >77:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+66C mytext CODE >78:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+66E mytext CODE >80:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+670 mytext CODE >81:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+672 mytext CODE >82:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+674 mytext CODE >86:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+676 mytext CODE >86:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+678 mytext CODE >87:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+67A mytext CODE >93:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+67C mytext CODE >94:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+67E mytext CODE >95:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+680 mytext CODE >96:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+682 mytext CODE >99:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+684 mytext CODE >100:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+686 mytext CODE >101:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+688 mytext CODE >102:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+68A mytext CODE >103:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+68C mytext CODE >104:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+68E mytext CODE >105:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+690 mytext CODE >115:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+692 mytext CODE >115:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+694 mytext CODE >116:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+696 mytext CODE >117:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+698 mytext CODE >118:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+69A mytext CODE >119:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+69C mytext CODE >120:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6A0 mytext CODE >121:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6A4 mytext CODE >122:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6A8 mytext CODE >123:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6AC mytext CODE >124:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6AE mytext CODE >126:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6B0 mytext CODE >127:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6B2 mytext CODE >128:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6B4 mytext CODE >129:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6B6 mytext CODE >130:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6B8 mytext CODE >131:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6BA mytext CODE >133:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6BC mytext CODE >134:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6BE mytext CODE >135:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6C0 mytext CODE >136:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6C2 mytext CODE >138:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6C4 mytext CODE >139:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6C6 mytext CODE >140:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6C8 mytext CODE >145:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6CA mytext CODE >146:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6CC mytext CODE >147:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6CE mytext CODE >148:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6D0 mytext CODE >149:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6D2 mytext CODE >151:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6D4 mytext CODE >152:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6D6 mytext CODE >153:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6D8 mytext CODE >154:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6DA mytext CODE >161:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6DC mytext CODE >165:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6DE mytext CODE >167:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6E0 mytext CODE >168:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6E2 mytext CODE >169:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6E4 mytext CODE >171:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6E6 mytext CODE >172:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6E8 mytext CODE >173:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6EA mytext CODE >174:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6EC mytext CODE >175:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6EE mytext CODE >178:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6F0 mytext CODE >179:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6F2 mytext CODE >180:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6F4 mytext CODE >184:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6F6 mytext CODE >185:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+6F8 mytext CODE >186:/home/lum1na/MPLABXProjects/lab5.X/add.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst build/default/debug/add.o
+__Hspace_0 8000 0 ABS 0 - build/default/debug/add.o
+__Hspace_1 2 0 ABS 0 - build/default/debug/add.o
+__Hspace_2 0 0 ABS 0 - build/default/debug/add.o
+__Hspace_3 F00002 0 ABS 0 - build/default/debug/add.o
+__Hspace_4 60000E 0 ABS 0 - build/default/debug/add.o
+__Hibigdata 0 0 CODE 0 ibigdata build/default/debug/add.o
+__mediumconst 600 0 SMALLCONST 0 smallconst dist/default/debug/lab5.X.debug.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data build/default/debug/add.o
+__Hudata_bank0 0 0 ABS 0 udata_bank0 build/default/debug/add.o
+__Hudata_bank1 0 0 ABS 0 udata_bank1 build/default/debug/add.o
+__Hudata_bank2 0 0 ABS 0 udata_bank2 build/default/debug/add.o
+__Hudata_bank3 0 0 ABS 0 udata_bank3 build/default/debug/add.o
+__Hudata_bank4 0 0 ABS 0 udata_bank4 build/default/debug/add.o
+__Hudata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/add.o
+__L__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/add.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst build/default/debug/add.o
+___sp 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+_main 6FA 0 CODE 0 text0 dist/default/debug/lab5.X.debug.o
+___stack_hi 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+start 7FFC 0 CODE 0 init /tmp/xcXIdiCIO/driver_tmp_9.o
+__Hpowerup 0 0 CODE 0 powerup build/default/debug/add.o
+__accesstop 80 0 ABS 0 - /tmp/xcXIdiCIO/driver_tmp_9.o
+intlevel0 0 0 CODE 0 text /tmp/xcXIdiCIO/driver_tmp_9.o
+intlevel1 0 0 CODE 0 text /tmp/xcXIdiCIO/driver_tmp_9.o
+intlevel2 0 0 CODE 0 text /tmp/xcXIdiCIO/driver_tmp_9.o
+intlevel3 0 0 CODE 0 text /tmp/xcXIdiCIO/driver_tmp_9.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/add.o
+__Hifardata 0 0 CODE 0 ifardata build/default/debug/add.o
+__Hclrtext 0 0 ABS 0 clrtext build/default/debug/add.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+__Hintcode_body 0 0 ABS 0 intcode_body build/default/debug/add.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/debug/add.o
+main@ans 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lab5.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst build/default/debug/add.o
+__Hintcodelo 18 0 CODE 0 intcodelo build/default/debug/add.o
+__Lintcodelo 18 0 CODE 0 intcodelo build/default/debug/add.o
+start_initialization 70C 0 CODE 0 cinit dist/default/debug/lab5.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/add.o
+___rparam_used 1 0 ABS 0 - dist/default/debug/lab5.X.debug.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXIdiCIO/driver_tmp_9.o
+__Hbank0 0 0 ABS 0 bank0 build/default/debug/add.o
+__Hbank1 0 0 ABS 0 bank1 build/default/debug/add.o
+__Hbank2 0 0 ABS 0 bank2 build/default/debug/add.o
+__Hbank3 0 0 ABS 0 bank3 build/default/debug/add.o
+__Hbank4 0 0 ABS 0 bank4 build/default/debug/add.o
+__Hbank5 0 0 ABS 0 bank5 build/default/debug/add.o
+__Hcinit 0 0 ABS 0 cinit build/default/debug/add.o
+__Hconst 0 0 CONST 0 const build/default/debug/add.o
+__Hedata 0 0 ABS 0 edata build/default/debug/add.o
+__Hidata 0 0 CODE 0 idata build/default/debug/add.o
+__Hidloc 200008 0 IDLOC 5 idloc build/default/debug/add.o
+__Hnvbit 0 0 COMRAM 1 nvbit build/default/debug/add.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug/lab5.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata build/default/debug/add.o
+__Hstack 0 0 STACK 2 stack build/default/debug/add.o
+__Htext0 0 0 ABS 0 text0 build/default/debug/add.o
+__Hudata 0 0 ABS 0 udata build/default/debug/add.o
+__Hbigbss 0 0 BIGRAM 1 bigbss build/default/debug/add.o
+__Hbigram 0 0 ABS 0 bigram build/default/debug/add.o
+__Hbigsfr 0 0 ABS 0 bigsfr build/default/debug/add.o
+__smallconst 600 0 SMALLCONST 0 smallconst dist/default/debug/lab5.X.debug.o
+__Hcomram 0 0 ABS 0 comram build/default/debug/add.o
+__Hconfig 30000E 0 CONFIG 4 config build/default/debug/add.o
+__Lbank0 0 0 ABS 0 bank0 build/default/debug/add.o
+__Lbank1 0 0 ABS 0 bank1 build/default/debug/add.o
+__Lbank2 0 0 ABS 0 bank2 build/default/debug/add.o
+__Lbank3 0 0 ABS 0 bank3 build/default/debug/add.o
+__Lbank4 0 0 ABS 0 bank4 build/default/debug/add.o
+__Lbank5 0 0 ABS 0 bank5 build/default/debug/add.o
+__Lcinit 0 0 ABS 0 cinit build/default/debug/add.o
+__Lconst 0 0 CONST 0 const build/default/debug/add.o
+__Ledata 0 0 ABS 0 edata build/default/debug/add.o
+__Lidata 0 0 CODE 0 idata build/default/debug/add.o
+__Lidloc 0 0 IDLOC 5 idloc build/default/debug/add.o
+__Lnvbit 0 0 COMRAM 1 nvbit build/default/debug/add.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug/lab5.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata build/default/debug/add.o
+__Lstack 0 0 STACK 2 stack build/default/debug/add.o
+__Ltext0 0 0 ABS 0 text0 build/default/debug/add.o
+__Ludata 0 0 ABS 0 udata build/default/debug/add.o
+__Hfarbss 0 0 FARRAM 0 farbss build/default/debug/add.o
+__Lintcode_body 0 0 ABS 0 intcode_body build/default/debug/add.o
+__Habs1 0 0 ABS 0 abs1 build/default/debug/add.o
+__Hcode 0 0 ABS 0 code build/default/debug/add.o
+__Hdata 0 0 ABS 0 data build/default/debug/add.o
+__Hheap 0 0 HEAP 7 heap build/default/debug/add.o
+__Hinit 8000 0 CODE 0 init build/default/debug/add.o
+__Hrbit 0 0 COMRAM 1 rbit build/default/debug/add.o
+__Hrbss 0 0 COMRAM 1 rbss build/default/debug/add.o
+__Htemp 0 0 COMRAM 1 temp build/default/debug/add.o
+__Htext 0 0 ABS 0 text build/default/debug/add.o
+__Labs1 0 0 ABS 0 abs1 build/default/debug/add.o
+__Lcode 0 0 ABS 0 code build/default/debug/add.o
+__Ldata 0 0 ABS 0 data build/default/debug/add.o
+__Lheap 0 0 HEAP 7 heap build/default/debug/add.o
+__Linit 7FFC 0 CODE 0 init build/default/debug/add.o
+__Lrbit 0 0 COMRAM 1 rbit build/default/debug/add.o
+__Lrbss 0 0 COMRAM 1 rbss build/default/debug/add.o
+__Ltemp 0 0 COMRAM 1 temp build/default/debug/add.o
+__Ltext 0 0 ABS 0 text build/default/debug/add.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM build/default/debug/add.o
+__Hintret 0 0 ABS 0 intret build/default/debug/add.o
+__Hirdata 0 0 CODE 0 irdata build/default/debug/add.o
+__S0 8000 0 ABS 0 - build/default/debug/add.o
+__S1 2 0 ABS 0 - build/default/debug/add.o
+__S3 F00002 0 ABS 0 - build/default/debug/add.o
+__S4 0 0 ABS 0 - build/default/debug/add.o
+__S5 0 0 ABS 0 - build/default/debug/add.o
+__Lbigdata 0 0 BIGRAM 1 bigdata build/default/debug/add.o
+__Hnvrram 0 0 COMRAM 1 nvrram build/default/debug/add.o
+_is_prime 602 0 CODE 0 mytext build/default/debug/add.o
+__Lintentry 0 0 ABS 0 intentry build/default/debug/add.o
+__Hramtop 600 0 RAM 0 ramtop build/default/debug/add.o
+__Hrparam 0 0 COMRAM 1 rparam build/default/debug/add.o
+__activetblptr 0 0 ABS 0 - dist/default/debug/lab5.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct build/default/debug/add.o
+__Lbigbss 0 0 BIGRAM 1 bigbss build/default/debug/add.o
+__Lbigram 0 0 ABS 0 bigram build/default/debug/add.o
+__Lbigsfr 0 0 ABS 0 bigsfr build/default/debug/add.o
+__Lcomram 0 0 ABS 0 comram build/default/debug/add.o
+__Lconfig 0 0 CONFIG 4 config build/default/debug/add.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi build/default/debug/add.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo build/default/debug/add.o
+__Lfarbss 0 0 FARRAM 0 farbss build/default/debug/add.o
+___inthi_stack_hi 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+__Lfardata 0 0 FARRAM 0 fardata build/default/debug/add.o
+isa$std 1 0 ABS 0 - /tmp/xcXIdiCIO/driver_tmp_9.o
+stackhi 0 0 ABS 0 - /tmp/xcXIdiCIO/driver_tmp_9.o
+stacklo 0 0 ABS 0 - /tmp/xcXIdiCIO/driver_tmp_9.o
+__Lintcode 8 0 CODE 0 intcode build/default/debug/add.o
+__Lintret 0 0 ABS 0 intret build/default/debug/add.o
+__Lirdata 0 0 CODE 0 irdata build/default/debug/add.o
+__Lspace_0 0 0 ABS 0 - build/default/debug/add.o
+__Lspace_1 0 0 ABS 0 - build/default/debug/add.o
+__Lspace_2 0 0 ABS 0 - build/default/debug/add.o
+__Lspace_3 0 0 ABS 0 - build/default/debug/add.o
+__Lspace_4 0 0 ABS 0 - build/default/debug/add.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM build/default/debug/add.o
+end_of_initialization 70C 0 CODE 0 cinit dist/default/debug/lab5.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram build/default/debug/add.o
+__Hintentry 0 0 ABS 0 intentry build/default/debug/add.o
+__Hreset_vec 4 0 CODE 0 reset_vec build/default/debug/add.o
+__Lramtop 600 0 RAM 0 ramtop build/default/debug/add.o
+__Lrparam 0 0 COMRAM 1 rparam build/default/debug/add.o
+__pcinit 70C 0 CODE 0 cinit dist/default/debug/lab5.X.debug.o
+__ptext0 6FA 0 CODE 0 text0 dist/default/debug/lab5.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct build/default/debug/add.o
+__ramtop 600 0 RAM 0 ramtop /tmp/xcXIdiCIO/driver_tmp_9.o
+__Lpowerup 0 0 CODE 0 powerup build/default/debug/add.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data build/default/debug/add.o
+__Ludata_bank0 0 0 ABS 0 udata_bank0 build/default/debug/add.o
+__Ludata_bank1 0 0 ABS 0 udata_bank1 build/default/debug/add.o
+__Ludata_bank2 0 0 ABS 0 udata_bank2 build/default/debug/add.o
+__Ludata_bank3 0 0 ABS 0 udata_bank3 build/default/debug/add.o
+__Ludata_bank4 0 0 ABS 0 udata_bank4 build/default/debug/add.o
+__Ludata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/add.o
+__H__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/add.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/debug/lab5.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec build/default/debug/add.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXIdiCIO/driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXIdiCIO/driver_tmp_9.o
+___param_bank 0 0 ABS 0 - dist/default/debug/lab5.X.debug.o
+___intlo_stack_hi 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack /tmp/xcXIdiCIO/driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata build/default/debug/add.o
+__end_of__initialization 70C 0 CODE 0 cinit dist/default/debug/lab5.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata build/default/debug/add.o
+__Lclrtext 0 0 ABS 0 clrtext build/default/debug/add.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lab5.X.debug.o
+__end_of_main 70C 0 CODE 0 text0 dist/default/debug/lab5.X.debug.o
+__Hudata_acs 0 0 ABS 0 udata_acs build/default/debug/add.o
+__HRAM 0 0 ABS 0 - build/default/debug/add.o
+__Hbss 0 0 RAM 1 bss build/default/debug/add.o
+__Hram 0 0 ABS 0 ram build/default/debug/add.o
+__Hsfr 0 0 ABS 0 sfr build/default/debug/add.o
+__LRAM 1 0 ABS 0 - build/default/debug/add.o
+__Lbss 0 0 RAM 1 bss build/default/debug/add.o
+__Lram 0 0 ABS 0 ram build/default/debug/add.o
+__Lsfr 0 0 ABS 0 sfr build/default/debug/add.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi build/default/debug/add.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo build/default/debug/add.o
+__initialization 70C 0 CODE 0 cinit dist/default/debug/lab5.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata build/default/debug/add.o
+__Hsmallconst 602 0 SMALLCONST 0 smallconst build/default/debug/add.o
+__Ludata_acs 0 0 ABS 0 udata_acs build/default/debug/add.o
+__Lifardata 0 0 CODE 0 ifardata build/default/debug/add.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/debug/add.o
+__Hintcode 8 0 CODE 0 intcode build/default/debug/add.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+mytext 0 602 602 110 1
+edata 3 F00000 F00000 2 1
+cstackCOMRAM 1 1 1 1 1
+init 0 7FFC 7FFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 600 600 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

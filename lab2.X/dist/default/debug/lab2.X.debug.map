@@ -1,0 +1,66 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Sep 25 08:37:56 2025
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x0001e8
+                   .cinit    romdata   0x0001e8    program   0x000002
+.config_300001_BUILD/DEFAULT/DEBUG/LAB2-HARD.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/LAB2-HARD.O    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0001e9      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            492 out of 33048 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  NoMatch   0x0000fa    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                     STOP   0x0001e8    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                 Sortbyte   0x000036    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+          checkpalindrome   0x0000a6    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    nextj   0x00009c    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                   nextj1   0x00019e    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+              printresult   0x0001a8    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                  restore   0x000122    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    sorti   0x000064    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                   sorti1   0x000166    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                 sortinit   0x000054    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                sortinit1   0x000156    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    sortj   0x000080    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                   sortj1   0x000182    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                     swap   0x00008a    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    swap1   0x00018c    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 Sortbyte   0x000036    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                 sortinit   0x000054    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    sorti   0x000064    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    sortj   0x000080    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                     swap   0x00008a    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    nextj   0x00009c    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+          checkpalindrome   0x0000a6    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                  NoMatch   0x0000fa    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                  restore   0x000122    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                sortinit1   0x000156    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                   sorti1   0x000166    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                   sortj1   0x000182    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                    swap1   0x00018c    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                   nextj1   0x00019e    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+              printresult   0x0001a8    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+                     STOP   0x0001e8    program     static /home/lum1na/MPLABXProjects/lab2.X/lab2-hard.asm
+
+

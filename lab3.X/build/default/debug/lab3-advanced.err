@@ -1,0 +1,6 @@
+Warning[207] /home/lum1na/MPLABXProjects/lab3.X/lab3-advanced.asm 46 : Found label after column 1. (Add)
+Warning[207] /home/lum1na/MPLABXProjects/lab3.X/lab3-advanced.asm 55 : Found label after column 1. (Zero)
+Warning[207] /home/lum1na/MPLABXProjects/lab3.X/lab3-advanced.asm 58 : Found label after column 1. (Check)
+Warning[207] /home/lum1na/MPLABXProjects/lab3.X/lab3-advanced.asm 62 : Found label after column 1. (Carry)
+Warning[207] /home/lum1na/MPLABXProjects/lab3.X/lab3-advanced.asm 70 : Found label after column 1. (NoCarry)
+Warning[207] /home/lum1na/MPLABXProjects/lab3.X/lab3-advanced.asm 82 : Found label after column 1. (STOP)

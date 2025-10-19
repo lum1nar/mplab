@@ -1,0 +1,8 @@
+Warning[205] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 1 : Found directive in column 1. (List)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 15 : Found label after column 1. (bit4)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 21 : Found label after column 1. (ADD4)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 32 : Found label after column 1. (bit2)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 39 : Found label after column 1. (ADD2)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 47 : Found label after column 1. (bit1)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 54 : Found label after column 1. (ADD1)
+Warning[207] /home/lum1na/MPLABXProjects/lab1.X/lab1-hard.asm 68 : Found label after column 1. (STOP)

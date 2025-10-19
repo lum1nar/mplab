@@ -1,0 +1,52 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Oct  2 03:02:59 2025
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00007a
+                   .cinit    romdata   0x00007a    program   0x000002
+.config_300001_BUILD/DEFAULT/DEBUG/LAB3-HARD.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/LAB3-HARD.O    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00007b      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            126 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      add   0x000052    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     comp   0x000076    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                      mul   0x000036    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                  mulinit   0x00002c    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     neg1   0x000016    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     neg2   0x000026    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     next   0x00001c    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     sign   0x00006c    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     stop   0x00007a    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     neg1   0x000016    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     next   0x00001c    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     neg2   0x000026    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                  mulinit   0x00002c    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                      mul   0x000036    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                      add   0x000052    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     sign   0x00006c    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     comp   0x000076    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+                     stop   0x00007a    program     static /home/lum1na/MPLABXProjects/lab3.X/lab3-hard.asm
+
+
