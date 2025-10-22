@@ -13,15 +13,16 @@ List p=18f4520
     ; Put N in 0x050, 0x051
     ; Sqrt(N) in 0x052 0x053
 
-    ; WARNING: THIS IS NOT A ACCURATE SQUARE ROOT FINDER, IT'S DESIGNED TO ITERATE newtonSqrt 5 TIMES ONLY
-    ; WARNING: THIS SHOULD BE USED TO OPTIMIZE check_prime ONLY
+    ; WARNING: IF N IS NOT A PERFECT SQUARE, USE ANOTHER SQUARE ROOT FINDER!!!! 
+    ; WARNING: THIS ONE WILL GET STUCK AND IT'S NORMAL!!!
+
+    ; Hi I'm Sasa
 
     
     MOVLF 0x00, 0x050 ;N_high
-    MOVLF 0x03, 0x051 ;N_low
+    MOVLF 0x40, 0x051 ;N_low
     MOVLF 0x00, 0x052 ;x0_high
     MOVLF 0x50, 0x053 ;x0_low
-    MOVLF 0x05, 0x057 ; squareroot counter : doing 5 times is enough for 16 bit
     RCALL newtonSqrt
 
     GOTO finish
@@ -54,10 +55,17 @@ newtonSqrt:
     RRCF 0x053 ; / 2
     MOVF 0x052, W
     
-    DECFSZ 0x17 ;skip next line if iteration count == 0
-    GOTO newtonSqrt
+    CPFSEQ  0x5E ;skip if squareroot_high == last_squareroot_high
+    GOTO save
+    MOVF 0x053, W
+    CPFSEQ 0x5F ;skip if squareroot_low == last_squareroot_low
+    GOTO save
     RETURN
-
+    
+save:
+    MOVFF 0x052, 0x5E ;last_squareroot_high
+    MOVFF 0x053, 0x5F ;last_squareroot_low
+    GOTO newtonSqrt
     
 division:
     RLCF 0x61 ;dividend_low rotate left and store carry
