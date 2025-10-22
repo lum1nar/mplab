@@ -12,6 +12,11 @@ List p=18f4520
     ; This is a Sqrare Root Finder for 16 bit unsigned integer
     ; Put N in 0x050, 0x051
     ; Sqrt(N) in 0x052 0x053
+    ; change
+    ; MOVLF d'16', 0x07A ;iteration count
+    ; to
+    ; MOVLF 16, 0x07A ;iteration count
+    ; for cx8
 
     ; WARNING: IF N IS NOT A PERFECT SQUARE, USE ANOTHER SQUARE ROOT FINDER!!!! 
     ; WARNING: THIS ONE WILL GET STUCK AND IT'S NORMAL!!!

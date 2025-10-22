@@ -4124,7 +4124,7 @@ endm
 _count_primes:
     MOVLF 0xFF, 0x1F ;; not a prime
     MOVLF 0x01, 0x1E ;; prime
-    ;m += 1
+
     MOVLW 1
     ADDWF 0x03, F
     MOVLW 0
@@ -4137,18 +4137,6 @@ _count_primes:
 
 find_prime:
 
-
-
-   ; MOVF 0x01, W
-  ; CPFSEQ 0x03 ; if 0x03 == 0x01 skip next line
-   ; GOTO find_loop ;0x03 != 0x01
-   ; GOTO check_high ;0x03 == 0x01
-
-   ; check_high:
-    ;MOVF 0x02, W
-   ; CPFSEQ 0x04 ; if 0x02 == 0x04 skip next line
-   ; GOTO find_loop ;0x02 != 0x04
-   ; RETURN ;0x02 == 0x04 -> finish
 
 
     find_loop:
@@ -4296,7 +4284,7 @@ adddivisor:
     ; quotient in 0x70 0x71
     ; remainder in 0x72 0x73
 newtonSqrt:
-    ;; !!!!!!!!!!!!!!!!!!! Clear before use because it has different number everytime
+    ;; !!!!!!!!!!!!!!!!!!! Clear quotient and remainder before use because it has different number everytime
     MOVLF 16, 0x07A ;iteration count
     CLRF 0x070 ; quotient_high = 0
     CLRF 0x071 ; quotient_low = 0

@@ -418,7 +418,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;/opt/microchip/xc8/v3.00/pic/include/proc/pic18f4520.h: 6999: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 "3 main.c
-[; ;main.c: 3:     volatile unsigned int ans = count_primes(35677, 65521);
+[; ;main.c: 3:     volatile unsigned int ans = count_primes(1,20);
 [p x WDT  =  OFF ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "6
@@ -430,7 +430,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8
 [; ;main.c: 8: 
 [v _ans `Vui ~T0 @X0 1 a ]
-[e = _ans ( _count_primes (2 , -> -> 35677 `l `ui -> -> 65521 `l `ui ]
+[e = _ans ( _count_primes (2 , -> -> 1 `i `ui -> -> 20 `i `ui ]
 "9
 [; ;main.c: 9: }
 [e :U 305 ]

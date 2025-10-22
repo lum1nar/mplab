@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                               Thu Oct 16 10:55:38 2025
+                                                                                               Wed Oct 22 15:21:41 2025
 
 Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1 
      1                           	processor	18F4520
@@ -315,13 +315,13 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
    297                           	callstack 30
    298   000754                     
    299                           ;main.c: 8: 
-   300   000754  0E8B               	movlw	139
+   300   000754  0E00               	movlw	0
    301   000756  6E02               	movwf	(_count_primes$0+1)^0,c
-   302   000758  0E5D               	movlw	93
+   302   000758  0E01               	movlw	1
    303   00075A  6E01               	movwf	_count_primes$0^0,c
-   304   00075C  0EFF               	movlw	255
+   304   00075C  0E00               	movlw	0
    305   00075E  6E04               	movwf	(_count_primes$1+1)^0,c
-   306   000760  0EF1               	movlw	241
+   306   000760  0E14               	movlw	20
    307   000762  6E03               	movwf	_count_primes$1^0,c
    308   000764  EC01  F003         	call	_count_primes	;wreg free
    309   000768  C001  F001         	movff	?_count_primes,main@ans	;volatile
@@ -654,7 +654,7 @@ DATA                 0      0       2      0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                   Thu Oct 16 10:55:38 2025
+Symbol Table                                                                                   Wed Oct 22 15:21:41 2025
 
                       l7 0770                        l8 0770                      l688 0754  
                    _main 0754                     start 7FFC             ___param_bank 0000  

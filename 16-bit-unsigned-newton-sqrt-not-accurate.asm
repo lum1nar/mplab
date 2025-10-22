@@ -12,6 +12,11 @@ List p=18f4520
     ; This is a INACCURATE Sqrare Root Finder for 16 bit unsigned integer
     ; Put N in 0x050, 0x051
     ; Sqrt(N) in 0x052 0x053
+    ; change
+    ; MOVLF d'16', 0x07A ;iteration count
+    ; to
+    ; MOVLF 16, 0x07A ;iteration count
+    ; for cx8
 
     ; WARNING: THIS IS NOT A ACCURATE SQUARE ROOT FINDER, IT'S DESIGNED TO ITERATE newtonSqrt 5 TIMES ONLY
     ; WARNING: THIS SHOULD BE USED TO OPTIMIZE check_prime ONLY

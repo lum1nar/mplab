@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                                           Thu Oct 16 05:03:17 2025
+                                                                                                           Wed Oct 22 15:21:40 2025
 
 
      1                           	processor	18F4520
@@ -3641,256 +3641,244 @@ Microchip MPLAB XC8 Assembler V3.00 build 20241204225717
   3635   000604  6E1F               	movwf	31,c
   3636   000606  0E01               	movlw	1
   3637   000608  6E1E               	movwf	30,c
-  3638                           
-  3639                           ;m += 1
-  3640   00060A  0E01               	movlw	1
-  3641   00060C  2603               	addwf	3,f,c
-  3642   00060E  0E00               	movlw	0
-  3643   000610  2204               	addwfc	4,f,c
-  3644   000612  D805               	rcall	find_prime
-  3645   000614  C0A0 F001          	movff	160,1
-  3646   000618  C0A1 F002          	movff	161,2
-  3647   00061C  0012               	return	
-  3648   00061E                     find_prime:
-  3649                           
-  3650                           ; MOVF 0x01, W
-  3651                           ; CPFSEQ 0x03 ; if 0x03 == 0x01 skip next line
-  3652                           ; GOTO find_loop ;0x03 != 0x01
-  3653                           ; GOTO check_high ;0x03 == 0x01
-  3654                           ; check_high:
-  3655                           ;MOVF 0x02, W
-  3656                           ; CPFSEQ 0x04 ; if 0x02 == 0x04 skip next line
-  3657                           ; GOTO find_loop ;0x02 != 0x04
-  3658                           ; RETURN ;0x02 == 0x04 -> finish
-  3659   00061E  D813               	rcall	is_prime
-  3660   000620  5000               	movf	0,w,c
-  3661   000622  621F               	cpfseq	31,c	;skip if 0x00 is not a prime
-  3662   000624  D001               	goto	ansplus1
-  3663   000626  D004               	goto	nplus1
-  3664   000628                     ansplus1:
-  3665   000628  0E01               	movlw	1
-  3666   00062A  27A0               	addwf	160,f,b
-  3667   00062C  0E00               	movlw	0
-  3668   00062E  23A1               	addwfc	161,f,b
-  3669   000630                     nplus1:
-  3670                           
-  3671                           ;n += 1
-  3672   000630  0E01               	movlw	1
-  3673   000632  2601               	addwf	1,f,c
-  3674   000634  0E00               	movlw	0
-  3675   000636  2202               	addwfc	2,f,c
-  3676                           
-  3677                           ; next prime
-  3678   000638  5001               	movf	1,w,c
-  3679   00063A  6203               	cpfseq	3,c	;skip if n_low = m_low
-  3680   00063C  D7F0               	goto	find_prime
-  3681   00063E  5002               	movf	2,w,c	; n_low = m_low
-  3682   000640  6204               	cpfseq	4,c	;skip if n_high = m_high
-  3683   000642  D7ED               	goto	find_prime
-  3684   000644  0012               	return		;n_high = m_high
-  3685   000646                     is_prime:
-  3686   000646  C001 F051          	movff	1,81	; N_low -> 0x051 for sqrt
-  3687   00064A  C002 F050          	movff	2,80	; N_high -> 0x050 for sqrt
-  3688   00064E  C001 F008          	movff	1,8	; N_low -> 0x008 for dividend
-  3689   000652  C002 F007          	movff	2,7	; N_high -> 0x007 for dividend
-  3690   000656  0E01               	movlw	1
-  3691   000658  6E00               	movwf	0,c
-  3692                           
-  3693                           ;check if N_HIGH != 0 && N_low == 1 or 2
-  3694   00065A  0E01               	movlw	1
-  3695   00065C  6E0E               	movwf	14,c
-  3696   00065E  0E02               	movlw	2
-  3697   000660  6E0F               	movwf	15,c
-  3698                           
-  3699                           ;MOVF 0x050
-  3700   000662  5050               	movf	80,w,c	;N_high -> WREG
-  3701   000664  620D               	cpfseq	13,c	; if N_high == 0 skip next line
-  3702   000666  D007               	goto	not1or2	;N_high != 0
-  3703                           
-  3704                           ;N_high == 0
-  3705   000668  5051               	movf	81,w,c	;N_low -> WREG
-  3706   00066A  620E               	cpfseq	14,c	; if 0x51 == 0x0E -> WREG = 0x01 skip next line
-  3707   00066C  D001               	goto	not1
-  3708   00066E  D02F               	goto	notprime	;WREG==1
-  3709   000670                     not1:
-  3710   000670  620F               	cpfseq	15,c	; if 0x51 == 0x0F -> WREG = 0x02 skip next line
-  3711   000672  D001               	goto	not1or2
-  3712   000674  0012               	return		;WREG==2
-  3713   000676                     not1or2:
-  3714   000676  6A0E               	clrf	14,c
-  3715   000678  6A0F               	clrf	15,c
-  3716   00067A  0E00               	movlw	0
-  3717   00067C  6E52               	movwf	82,c
-  3718   00067E  0E50               	movlw	80
-  3719   000680  6E53               	movwf	83,c
-  3720                           
-  3721                           ; This is a Sqruare Finder for 16bit unsigned integer
-  3722                           ; Put N in 0x050, 0x051
-  3723                           ; Sqrt(N) in 0x052 0x053
-  3724   000682  0E05               	movlw	5
-  3725   000684  6E17               	movwf	23,c
-  3726   000686  D831               	rcall	newtonSqrt
-  3727                           
-  3728                           ; sqrtn += 1
-  3729   000688  0E01               	movlw	1
-  3730   00068A  2653               	addwf	83,f,c	;divisor_low
-  3731   00068C  0E00               	movlw	0
-  3732   00068E  2252               	addwfc	82,f,c	;divisor_high
-  3733   000690  0E00               	movlw	0
-  3734   000692  6E10               	movwf	16,c
-  3735   000694  0E02               	movlw	2
-  3736   000696  6E11               	movwf	17,c
-  3737   000698  C052 F022          	movff	82,34	;; 0x022 -> sqrtn_high -> max -> i don;t reaaly need this, I can just use 0x52 but just
+  3638   00060A  0E01               	movlw	1
+  3639   00060C  2603               	addwf	3,f,c
+  3640   00060E  0E00               	movlw	0
+  3641   000610  2204               	addwfc	4,f,c
+  3642   000612  D805               	rcall	find_prime
+  3643   000614  C0A0 F001          	movff	160,1
+  3644   000618  C0A1 F002          	movff	161,2
+  3645   00061C  0012               	return	
+  3646   00061E                     find_prime:
+  3647   00061E  D813               	rcall	is_prime
+  3648   000620  5000               	movf	0,w,c
+  3649   000622  621F               	cpfseq	31,c	;skip if 0x00 is not a prime
+  3650   000624  D001               	goto	ansplus1
+  3651   000626  D004               	goto	nplus1
+  3652   000628                     ansplus1:
+  3653   000628  0E01               	movlw	1
+  3654   00062A  27A0               	addwf	160,f,b
+  3655   00062C  0E00               	movlw	0
+  3656   00062E  23A1               	addwfc	161,f,b
+  3657   000630                     nplus1:
+  3658                           
+  3659                           ;n += 1
+  3660   000630  0E01               	movlw	1
+  3661   000632  2601               	addwf	1,f,c
+  3662   000634  0E00               	movlw	0
+  3663   000636  2202               	addwfc	2,f,c
+  3664                           
+  3665                           ; next prime
+  3666   000638  5001               	movf	1,w,c
+  3667   00063A  6203               	cpfseq	3,c	;skip if n_low = m_low
+  3668   00063C  D7F0               	goto	find_prime
+  3669   00063E  5002               	movf	2,w,c	; n_low = m_low
+  3670   000640  6204               	cpfseq	4,c	;skip if n_high = m_high
+  3671   000642  D7ED               	goto	find_prime
+  3672   000644  0012               	return		;n_high = m_high
+  3673   000646                     is_prime:
+  3674   000646  C001 F051          	movff	1,81	; N_low -> 0x051 for sqrt
+  3675   00064A  C002 F050          	movff	2,80	; N_high -> 0x050 for sqrt
+  3676   00064E  C001 F008          	movff	1,8	; N_low -> 0x008 for dividend
+  3677   000652  C002 F007          	movff	2,7	; N_high -> 0x007 for dividend
+  3678   000656  0E01               	movlw	1
+  3679   000658  6E00               	movwf	0,c
+  3680                           
+  3681                           ;check if N_HIGH != 0 && N_low == 1 or 2
+  3682   00065A  0E01               	movlw	1
+  3683   00065C  6E0E               	movwf	14,c
+  3684   00065E  0E02               	movlw	2
+  3685   000660  6E0F               	movwf	15,c
+  3686                           
+  3687                           ;MOVF 0x050
+  3688   000662  5050               	movf	80,w,c	;N_high -> WREG
+  3689   000664  620D               	cpfseq	13,c	; if N_high == 0 skip next line
+  3690   000666  D007               	goto	not1or2	;N_high != 0
+  3691                           
+  3692                           ;N_high == 0
+  3693   000668  5051               	movf	81,w,c	;N_low -> WREG
+  3694   00066A  620E               	cpfseq	14,c	; if 0x51 == 0x0E -> WREG = 0x01 skip next line
+  3695   00066C  D001               	goto	not1
+  3696   00066E  D02F               	goto	notprime	;WREG==1
+  3697   000670                     not1:
+  3698   000670  620F               	cpfseq	15,c	; if 0x51 == 0x0F -> WREG = 0x02 skip next line
+  3699   000672  D001               	goto	not1or2
+  3700   000674  0012               	return		;WREG==2
+  3701   000676                     not1or2:
+  3702   000676  6A0E               	clrf	14,c
+  3703   000678  6A0F               	clrf	15,c
+  3704   00067A  0E00               	movlw	0
+  3705   00067C  6E52               	movwf	82,c
+  3706   00067E  0E50               	movlw	80
+  3707   000680  6E53               	movwf	83,c
+  3708                           
+  3709                           ; This is a Sqruare Finder for 16bit unsigned integer
+  3710                           ; Put N in 0x050, 0x051
+  3711                           ; Sqrt(N) in 0x052 0x053
+  3712   000682  0E05               	movlw	5
+  3713   000684  6E17               	movwf	23,c
+  3714   000686  D831               	rcall	newtonSqrt
+  3715                           
+  3716                           ; sqrtn += 1
+  3717   000688  0E01               	movlw	1
+  3718   00068A  2653               	addwf	83,f,c	;divisor_low
+  3719   00068C  0E00               	movlw	0
+  3720   00068E  2252               	addwfc	82,f,c	;divisor_high
+  3721   000690  0E00               	movlw	0
+  3722   000692  6E10               	movwf	16,c
+  3723   000694  0E02               	movlw	2
+  3724   000696  6E11               	movwf	17,c
+  3725   000698  C052 F022          	movff	82,34	;; 0x022 -> sqrtn_high -> max -> i don;t reaaly need this, I can just use 0x52 but just
       +                           in case
-  3738   00069C  C053 F023          	movff	83,35	;; 0x023 -> sqrtn_low -> max
-  3739   0006A0  D801               	rcall	checkprime
-  3740   0006A2  0012               	return	
-  3741   0006A4                     checkprime:
-  3742   0006A4  0E10               	movlw	16
-  3743   0006A6  6E7A               	movwf	122,c
-  3744   0006A8  6A70               	clrf	112,c	; quotient_high = 0
-  3745   0006AA  6A71               	clrf	113,c	; quotient_low = 0
-  3746   0006AC  6A72               	clrf	114,c	; remainder_high = 0
-  3747   0006AE  6A73               	clrf	115,c	; remainder_low = 0
-  3748   0006B0  C011 F063          	movff	17,99	; cur_divisor_low -> divisor_low
-  3749   0006B4  C010 F062          	movff	16,98	; cur_divisor_high -> divisor_high
-  3750   0006B8  C007 F060          	movff	7,96	; N_HIGH -> dividend_low
-  3751   0006BC  C008 F061          	movff	8,97	; N_LOW -> dividend_low
-  3752   0006C0  D830               	rcall	division
-  3753                           
-  3754                           ;check whether remainder == 0 if not,
-  3755   0006C2  5072               	movf	114,w,c
-  3756   0006C4  6210               	cpfseq	16,c	;skip if remainder_low == 0; do next line if remainder_low > 0 -> still a prime 0x10 is
+  3726   00069C  C053 F023          	movff	83,35	;; 0x023 -> sqrtn_low -> max
+  3727   0006A0  D801               	rcall	checkprime
+  3728   0006A2  0012               	return	
+  3729   0006A4                     checkprime:
+  3730   0006A4  0E10               	movlw	16
+  3731   0006A6  6E7A               	movwf	122,c
+  3732   0006A8  6A70               	clrf	112,c	; quotient_high = 0
+  3733   0006AA  6A71               	clrf	113,c	; quotient_low = 0
+  3734   0006AC  6A72               	clrf	114,c	; remainder_high = 0
+  3735   0006AE  6A73               	clrf	115,c	; remainder_low = 0
+  3736   0006B0  C011 F063          	movff	17,99	; cur_divisor_low -> divisor_low
+  3737   0006B4  C010 F062          	movff	16,98	; cur_divisor_high -> divisor_high
+  3738   0006B8  C007 F060          	movff	7,96	; N_HIGH -> dividend_low
+  3739   0006BC  C008 F061          	movff	8,97	; N_LOW -> dividend_low
+  3740   0006C0  D830               	rcall	division
+  3741                           
+  3742                           ;check whether remainder == 0 if not,
+  3743   0006C2  5072               	movf	114,w,c
+  3744   0006C4  6210               	cpfseq	16,c	;skip if remainder_low == 0; do next line if remainder_low > 0 -> still a prime 0x10 is
       +                           just 0
-  3757   0006C6  D006               	goto	adddivisor
-  3758   0006C8  5073               	movf	115,w,c
-  3759   0006CA  6210               	cpfseq	16,c	;!!!!!!!!! maybe clrf 0x10 first?
-  3760   0006CC  D003               	goto	adddivisor
-  3761   0006CE                     notprime:
-  3762   0006CE  0EFF               	movlw	255
-  3763   0006D0  6E00               	movwf	0,c
-  3764   0006D2  0012               	return	
-  3765   0006D4                     adddivisor:
-  3766                           
-  3767                           ; divisor += 1
-  3768   0006D4  0E01               	movlw	1
-  3769   0006D6  2611               	addwf	17,f,c	;divisor_low
-  3770   0006D8  0E00               	movlw	0
-  3771   0006DA  2210               	addwfc	16,f,c	;divisor_high
-  3772                           
-  3773                           ; check if divisor == sqrt -> not found
-  3774   0006DC  5011               	movf	17,w,c
-  3775   0006DE  6223               	cpfseq	35,c	;skip if divisor_low == sqrt__low
-  3776   0006E0  D7E1               	goto	checkprime
-  3777   0006E2  5010               	movf	16,w,c
-  3778   0006E4  6222               	cpfseq	34,c	;skip if divisor_high == divisor_high
-  3779   0006E6  D7DE               	goto	checkprime
-  3780   0006E8  0012               	return	
-  3781   0006EA                     newtonSqrt:
-  3782                           
-  3783 ;; !!!!!!!!!!!!!!!!!!! Clear before use because it has different number everytime
-  3784   0006EA  0E10               	movlw	16
-  3785   0006EC  6E7A               	movwf	122,c
-  3786   0006EE  6A70               	clrf	112,c	; quotient_high = 0
-  3787   0006F0  6A71               	clrf	113,c	; quotient_low = 0
-  3788   0006F2  6A72               	clrf	114,c	; remainder_high = 0
-  3789   0006F4  6A73               	clrf	115,c	; remainder_low = 0
-  3790   0006F6  C050 F060          	movff	80,96	;dividend_high
-  3791   0006FA  C051 F061          	movff	81,97	;dividend_low
-  3792   0006FE  C052 F062          	movff	82,98	;divisor_high
-  3793   000702  C053 F063          	movff	83,99	;divisor_low
-  3794   000706  D80D               	rcall	division
-  3795   000708  5071               	movf	113,w,c	; quotient_low -> W
-  3796   00070A  2453               	addwf	83,w,c	; quotient_low + x0_low ? W
-  3797   00070C  6E53               	movwf	83,c	; ? x1_low
-  3798   00070E  5070               	movf	112,w,c	; quotient_high -> W
-  3799   000710  2052               	addwfc	82,w,c	; quotient_high + x0_high + carry ? W
-  3800   000712  6E52               	movwf	82,c	; ? x1_high
-  3801   000714  90D8               	bcf	status,0,c	;;!!!!!! clear the carry flag before rotate the high bits
-  3802   000716  3252               	rrcf	82,f,c	; / 2
-  3803   000718  3253               	rrcf	83,f,c	; / 2
-  3804   00071A  5052               	movf	82,w,c
-  3805   00071C  2E17               	decfsz	23,f,c	;skip next line if iteration count == 0
-  3806   00071E  D7E5               	goto	newtonSqrt
-  3807   000720  0012               	return	
-  3808   000722                     division:
-  3809   000722  90D8               	bcf	status,0,c	;;!!!!!! clear the carry flag before rotate the high bits
-  3810   000724  3661               	rlcf	97,f,c	;dividend_low rotate left and store carry
-  3811   000726  3660               	rlcf	96,f,c	;dividend_high rotate left with carry of dividend_low
-  3812   000728  3673               	rlcf	115,f,c	; remainder_low rotate left with carry of dividend_high
-  3813   00072A  3672               	rlcf	114,f,c	; remainder_high rotate left with carry of remainder_low
-  3814   00072C  5063               	movf	99,w,c	;divisor_low -> wreg
-  3815   00072E  5E73               	subwf	115,f,c	;remainder_low - divisor_low
-  3816   000730  5062               	movf	98,w,c	;divisor_high -> wreg
-  3817   000732  5A72               	subwfb	114,f,c	;remainder_high - divisor_high - borrow
-  3818                           
-  3819                           ;if no carry -> neg
-  3820                           ;rotate quotient left and set the LSB to 0
-  3821                           ;restore remainder_low !beware of the carry
-  3822   000734  E301               	bnc	neg	;!!!!!!!!!!!!!!!!!!!!!!!!!!! use BNC instead of BN e.g. 0x01 - 0xFF will be positive due to
+  3745   0006C6  D006               	goto	adddivisor
+  3746   0006C8  5073               	movf	115,w,c
+  3747   0006CA  6210               	cpfseq	16,c	;!!!!!!!!! maybe clrf 0x10 first?
+  3748   0006CC  D003               	goto	adddivisor
+  3749   0006CE                     notprime:
+  3750   0006CE  0EFF               	movlw	255
+  3751   0006D0  6E00               	movwf	0,c
+  3752   0006D2  0012               	return	
+  3753   0006D4                     adddivisor:
+  3754                           
+  3755                           ; divisor += 1
+  3756   0006D4  0E01               	movlw	1
+  3757   0006D6  2611               	addwf	17,f,c	;divisor_low
+  3758   0006D8  0E00               	movlw	0
+  3759   0006DA  2210               	addwfc	16,f,c	;divisor_high
+  3760                           
+  3761                           ; check if divisor == sqrt -> not found
+  3762   0006DC  5011               	movf	17,w,c
+  3763   0006DE  6223               	cpfseq	35,c	;skip if divisor_low == sqrt__low
+  3764   0006E0  D7E1               	goto	checkprime
+  3765   0006E2  5010               	movf	16,w,c
+  3766   0006E4  6222               	cpfseq	34,c	;skip if divisor_high == divisor_high
+  3767   0006E6  D7DE               	goto	checkprime
+  3768   0006E8  0012               	return	
+  3769   0006EA                     newtonSqrt:
+  3770                           
+  3771 ;; !!!!!!!!!!!!!!!!!!! Clear quotient and remainder before use because it has different number everytime
+  3772   0006EA  0E10               	movlw	16
+  3773   0006EC  6E7A               	movwf	122,c
+  3774   0006EE  6A70               	clrf	112,c	; quotient_high = 0
+  3775   0006F0  6A71               	clrf	113,c	; quotient_low = 0
+  3776   0006F2  6A72               	clrf	114,c	; remainder_high = 0
+  3777   0006F4  6A73               	clrf	115,c	; remainder_low = 0
+  3778   0006F6  C050 F060          	movff	80,96	;dividend_high
+  3779   0006FA  C051 F061          	movff	81,97	;dividend_low
+  3780   0006FE  C052 F062          	movff	82,98	;divisor_high
+  3781   000702  C053 F063          	movff	83,99	;divisor_low
+  3782   000706  D80D               	rcall	division
+  3783   000708  5071               	movf	113,w,c	; quotient_low -> W
+  3784   00070A  2453               	addwf	83,w,c	; quotient_low + x0_low ? W
+  3785   00070C  6E53               	movwf	83,c	; ? x1_low
+  3786   00070E  5070               	movf	112,w,c	; quotient_high -> W
+  3787   000710  2052               	addwfc	82,w,c	; quotient_high + x0_high + carry ? W
+  3788   000712  6E52               	movwf	82,c	; ? x1_high
+  3789   000714  90D8               	bcf	status,0,c	;;!!!!!! clear the carry flag before rotate the high bits
+  3790   000716  3252               	rrcf	82,f,c	; / 2
+  3791   000718  3253               	rrcf	83,f,c	; / 2
+  3792   00071A  5052               	movf	82,w,c
+  3793   00071C  2E17               	decfsz	23,f,c	;skip next line if iteration count == 0
+  3794   00071E  D7E5               	goto	newtonSqrt
+  3795   000720  0012               	return	
+  3796   000722                     division:
+  3797   000722  90D8               	bcf	status,0,c	;;!!!!!! clear the carry flag before rotate the high bits
+  3798   000724  3661               	rlcf	97,f,c	;dividend_low rotate left and store carry
+  3799   000726  3660               	rlcf	96,f,c	;dividend_high rotate left with carry of dividend_low
+  3800   000728  3673               	rlcf	115,f,c	; remainder_low rotate left with carry of dividend_high
+  3801   00072A  3672               	rlcf	114,f,c	; remainder_high rotate left with carry of remainder_low
+  3802   00072C  5063               	movf	99,w,c	;divisor_low -> wreg
+  3803   00072E  5E73               	subwf	115,f,c	;remainder_low - divisor_low
+  3804   000730  5062               	movf	98,w,c	;divisor_high -> wreg
+  3805   000732  5A72               	subwfb	114,f,c	;remainder_high - divisor_high - borrow
+  3806                           
+  3807                           ;if no carry -> neg
+  3808                           ;rotate quotient left and set the LSB to 0
+  3809                           ;restore remainder_low !beware of the carry
+  3810   000734  E301               	bnc	neg	;!!!!!!!!!!!!!!!!!!!!!!!!!!! use BNC instead of BN e.g. 0x01 - 0xFF will be positive due to
       +                           overflow
-  3823                           
-  3824                           ;if carry -> pos
-  3825                           ;rotate quotient left and set the LSB to 1
-  3826   000736  D008               	goto	pos
-  3827   000738                     neg:
-  3828   000738  3671               	rlcf	113,f,c	;rotate quotient_low left with carry
-  3829   00073A  3670               	rlcf	112,f,c	;rotate quotient_high left with carry
-  3830   00073C  9071               	bcf	113,0,c	;set the LSB to 0
-  3831   00073E  5063               	movf	99,w,c	;divisor_low -> wreg
-  3832   000740  2673               	addwf	115,f,c	;remainder_low + divisor_low
-  3833   000742  5062               	movf	98,w,c	;divisor_high -> wreg
-  3834   000744  2272               	addwfc	114,f,c	;remainder_high + divisor_high + carry
-  3835   000746  D003               	goto	next_div
-  3836   000748                     pos:
-  3837   000748  3671               	rlcf	113,f,c	;rotate quotient_low left with carry
-  3838   00074A  3670               	rlcf	112,f,c	;rotate quotient_high left with carry
-  3839   00074C  8071               	bsf	113,0,c	;set the LSB to 1
-  3840   00074E                     next_div:
-  3841   00074E  2E7A               	decfsz	122,f,c	;skip next line if iteration count == 0
-  3842   000750  D7E8               	goto	division
-  3843   000752  0012               	return	
-  3844                           tosu	equ	0xFFF
-  3845                           tosh	equ	0xFFE
-  3846                           tosl	equ	0xFFD
-  3847                           stkptr	equ	0xFFC
-  3848                           pclatu	equ	0xFFB
-  3849                           pclath	equ	0xFFA
-  3850                           pcl	equ	0xFF9
-  3851                           tblptru	equ	0xFF8
-  3852                           tblptrh	equ	0xFF7
-  3853                           tblptrl	equ	0xFF6
-  3854                           tablat	equ	0xFF5
-  3855                           prodh	equ	0xFF4
-  3856                           prodl	equ	0xFF3
-  3857                           indf0	equ	0xFEF
-  3858                           postinc0	equ	0xFEE
-  3859                           postdec0	equ	0xFED
-  3860                           preinc0	equ	0xFEC
-  3861                           plusw0	equ	0xFEB
-  3862                           fsr0h	equ	0xFEA
-  3863                           fsr0l	equ	0xFE9
-  3864                           wreg	equ	0xFE8
-  3865                           indf1	equ	0xFE7
-  3866                           postinc1	equ	0xFE6
-  3867                           postdec1	equ	0xFE5
-  3868                           preinc1	equ	0xFE4
-  3869                           plusw1	equ	0xFE3
-  3870                           fsr1h	equ	0xFE2
-  3871                           fsr1l	equ	0xFE1
-  3872                           bsr	equ	0xFE0
-  3873                           indf2	equ	0xFDF
-  3874                           postinc2	equ	0xFDE
-  3875                           postdec2	equ	0xFDD
-  3876                           preinc2	equ	0xFDC
-  3877                           plusw2	equ	0xFDB
-  3878                           fsr2h	equ	0xFDA
-  3879                           fsr2l	equ	0xFD9
-  3880                           status	equ	0xFD8
+  3811                           
+  3812                           ;if carry -> pos
+  3813                           ;rotate quotient left and set the LSB to 1
+  3814   000736  D008               	goto	pos
+  3815   000738                     neg:
+  3816   000738  3671               	rlcf	113,f,c	;rotate quotient_low left with carry
+  3817   00073A  3670               	rlcf	112,f,c	;rotate quotient_high left with carry
+  3818   00073C  9071               	bcf	113,0,c	;set the LSB to 0
+  3819   00073E  5063               	movf	99,w,c	;divisor_low -> wreg
+  3820   000740  2673               	addwf	115,f,c	;remainder_low + divisor_low
+  3821   000742  5062               	movf	98,w,c	;divisor_high -> wreg
+  3822   000744  2272               	addwfc	114,f,c	;remainder_high + divisor_high + carry
+  3823   000746  D003               	goto	next_div
+  3824   000748                     pos:
+  3825   000748  3671               	rlcf	113,f,c	;rotate quotient_low left with carry
+  3826   00074A  3670               	rlcf	112,f,c	;rotate quotient_high left with carry
+  3827   00074C  8071               	bsf	113,0,c	;set the LSB to 1
+  3828   00074E                     next_div:
+  3829   00074E  2E7A               	decfsz	122,f,c	;skip next line if iteration count == 0
+  3830   000750  D7E8               	goto	division
+  3831   000752  0012               	return	
+  3832                           tosu	equ	0xFFF
+  3833                           tosh	equ	0xFFE
+  3834                           tosl	equ	0xFFD
+  3835                           stkptr	equ	0xFFC
+  3836                           pclatu	equ	0xFFB
+  3837                           pclath	equ	0xFFA
+  3838                           pcl	equ	0xFF9
+  3839                           tblptru	equ	0xFF8
+  3840                           tblptrh	equ	0xFF7
+  3841                           tblptrl	equ	0xFF6
+  3842                           tablat	equ	0xFF5
+  3843                           prodh	equ	0xFF4
+  3844                           prodl	equ	0xFF3
+  3845                           indf0	equ	0xFEF
+  3846                           postinc0	equ	0xFEE
+  3847                           postdec0	equ	0xFED
+  3848                           preinc0	equ	0xFEC
+  3849                           plusw0	equ	0xFEB
+  3850                           fsr0h	equ	0xFEA
+  3851                           fsr0l	equ	0xFE9
+  3852                           wreg	equ	0xFE8
+  3853                           indf1	equ	0xFE7
+  3854                           postinc1	equ	0xFE6
+  3855                           postdec1	equ	0xFE5
+  3856                           preinc1	equ	0xFE4
+  3857                           plusw1	equ	0xFE3
+  3858                           fsr1h	equ	0xFE2
+  3859                           fsr1l	equ	0xFE1
+  3860                           bsr	equ	0xFE0
+  3861                           indf2	equ	0xFDF
+  3862                           postinc2	equ	0xFDE
+  3863                           postdec2	equ	0xFDD
+  3864                           preinc2	equ	0xFDC
+  3865                           plusw2	equ	0xFDB
+  3866                           fsr2h	equ	0xFDA
+  3867                           fsr2l	equ	0xFD9
+  3868                           status	equ	0xFD8
 
 
 Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                               Thu Oct 16 05:03:17 2025
+Symbol Table                                                                                               Wed Oct 22 15:21:40 2025
 
                          neg 0738                           pos 0748                          not1 0670  
                       WDTCON 0FD1                        STATUS 0FD8                        nplus1 0630  

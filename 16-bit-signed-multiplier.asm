@@ -14,6 +14,8 @@
 	; put mult2 in 0x82, 0x83
 	; product   in 0x90, 0x91, 0x92, 0x93
 	; All input test cases have to fall between -32768 and 32767
+    ; change d'16' to 16 of the following line for cx8
+    ; MOVLF d'16', 0x8B; iteration
 
 	MOVLF 0x75, 0x80 ;mult1_high
 	MOVLF 0x23, 0x81 ;mult1_low
@@ -61,7 +63,7 @@
 	    MOVFF 0x82, 0x97 ;mul2_3
 	    MOVFF 0x83, 0x98 ;mul2_4
 
-	    MOVLF 16, 0x8B; iteration
+	    MOVLF d'16', 0x8B; iteration
 	    BCF STATUS, 0
 	    RLCF 0x88 ; mul1 rotate left with carry
 	    RLCF 0x87 ; mul1 rotate left with carry

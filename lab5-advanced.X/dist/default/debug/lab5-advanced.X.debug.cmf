@@ -18,14 +18,14 @@ text0 CODE 0 754 754 24 1 2
 cstackCOMRAM COMRAM 1 1 1 4 1 1
 smallconst SMALLCONST 0 600 600 2 1 2
 config CONFIG 4 300000 300000 E 1 1
-$build/default/debug/count_primes.o
-mytext CODE 0 602 602 152 1 2
-edata EEDATA 3 F00000 F00000 2 1 1
-$/tmp/xcXDElHLO/driver_tmp_9.o
+$/tmp/xcXnFIhCN/driver_tmp_9.o
 idloc IDLOC 5 200000 200000 8 1 1
 init CODE 0 7FFC 7FFC 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 E 1 1
+$build/default/debug/count_primes.o
+mytext CODE 0 602 602 152 1 2
+edata EEDATA 3 F00000 F00000 2 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -67,12 +67,12 @@ $dist/default/debug/lab5-advanced.X.debug.o
 754 text0 CODE >6:/home/lum1na/MPLABXProjects/lab5-advanced.X/main.c
 754 text0 CODE >8:/home/lum1na/MPLABXProjects/lab5-advanced.X/main.c
 770 text0 CODE >9:/home/lum1na/MPLABXProjects/lab5-advanced.X/main.c
-778 cinit CODE >401:/tmp/xcXDElHLO/driver_tmp_1.s
-778 cinit CODE >403:/tmp/xcXDElHLO/driver_tmp_1.s
-778 cinit CODE >406:/tmp/xcXDElHLO/driver_tmp_1.s
-778 cinit CODE >412:/tmp/xcXDElHLO/driver_tmp_1.s
-778 cinit CODE >414:/tmp/xcXDElHLO/driver_tmp_1.s
-77A cinit CODE >415:/tmp/xcXDElHLO/driver_tmp_1.s
+778 cinit CODE >401:/tmp/xcXnFIhCN/driver_tmp_1.s
+778 cinit CODE >403:/tmp/xcXnFIhCN/driver_tmp_1.s
+778 cinit CODE >406:/tmp/xcXnFIhCN/driver_tmp_1.s
+778 cinit CODE >412:/tmp/xcXnFIhCN/driver_tmp_1.s
+778 cinit CODE >414:/tmp/xcXnFIhCN/driver_tmp_1.s
+77A cinit CODE >415:/tmp/xcXnFIhCN/driver_tmp_1.s
 $build/default/debug/count_primes.o
 602 mytext CODE >12:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
 604 mytext CODE >12:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
@@ -86,147 +86,147 @@ $build/default/debug/count_primes.o
 614 mytext CODE >20:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
 618 mytext CODE >21:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
 61C mytext CODE >22:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-61E mytext CODE >42:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-620 mytext CODE >44:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-622 mytext CODE >46:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-624 mytext CODE >47:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-626 mytext CODE >48:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-628 mytext CODE >51:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-62A mytext CODE >52:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-62C mytext CODE >53:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-62E mytext CODE >54:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-630 mytext CODE >59:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-632 mytext CODE >60:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-634 mytext CODE >61:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-636 mytext CODE >62:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-638 mytext CODE >65:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-63A mytext CODE >66:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-63C mytext CODE >67:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-63E mytext CODE >68:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-640 mytext CODE >69:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-642 mytext CODE >70:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-644 mytext CODE >71:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-646 mytext CODE >76:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-64A mytext CODE >77:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-64E mytext CODE >79:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-652 mytext CODE >80:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-656 mytext CODE >82:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-658 mytext CODE >82:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-65A mytext CODE >85:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-65C mytext CODE >85:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-65E mytext CODE >86:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-660 mytext CODE >86:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-662 mytext CODE >88:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-664 mytext CODE >89:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-666 mytext CODE >90:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-668 mytext CODE >92:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-66A mytext CODE >93:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-66C mytext CODE >94:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-66E mytext CODE >95:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-670 mytext CODE >98:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-672 mytext CODE >99:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-674 mytext CODE >100:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-676 mytext CODE >103:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-678 mytext CODE >104:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-67A mytext CODE >106:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-67C mytext CODE >106:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-67E mytext CODE >107:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-680 mytext CODE >107:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-682 mytext CODE >112:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-684 mytext CODE >112:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-686 mytext CODE >113:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-688 mytext CODE >116:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-68A mytext CODE >117:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-68C mytext CODE >118:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-68E mytext CODE >119:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-690 mytext CODE >121:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-692 mytext CODE >121:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-694 mytext CODE >122:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-696 mytext CODE >122:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-698 mytext CODE >124:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-69C mytext CODE >125:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6A0 mytext CODE >127:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6A2 mytext CODE >130:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6A4 mytext CODE >135:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6A6 mytext CODE >135:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6A8 mytext CODE >137:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6AA mytext CODE >138:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6AC mytext CODE >139:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6AE mytext CODE >140:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6B0 mytext CODE >141:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6B4 mytext CODE >142:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6B8 mytext CODE >143:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6BC mytext CODE >144:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6C0 mytext CODE >145:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6C2 mytext CODE >148:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6C4 mytext CODE >149:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6C6 mytext CODE >150:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6C8 mytext CODE >152:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6CA mytext CODE >153:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6CC mytext CODE >154:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6CE mytext CODE >158:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6D0 mytext CODE >158:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6D2 mytext CODE >159:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6D4 mytext CODE >165:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6D6 mytext CODE >166:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6D8 mytext CODE >167:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6DA mytext CODE >168:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6DC mytext CODE >171:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6DE mytext CODE >172:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6E0 mytext CODE >173:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6E2 mytext CODE >174:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6E4 mytext CODE >175:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6E6 mytext CODE >176:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6E8 mytext CODE >177:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6EA mytext CODE >187:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6EC mytext CODE >187:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6EE mytext CODE >188:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6F0 mytext CODE >189:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6F2 mytext CODE >190:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6F4 mytext CODE >191:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6F6 mytext CODE >192:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6FA mytext CODE >193:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-6FE mytext CODE >194:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-702 mytext CODE >195:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-706 mytext CODE >196:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-708 mytext CODE >198:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-70A mytext CODE >199:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-70C mytext CODE >200:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-70E mytext CODE >201:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-710 mytext CODE >202:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-712 mytext CODE >203:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-714 mytext CODE >205:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-716 mytext CODE >206:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-718 mytext CODE >207:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-71A mytext CODE >208:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-71C mytext CODE >210:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-71E mytext CODE >211:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-720 mytext CODE >212:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-722 mytext CODE >217:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-724 mytext CODE >218:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-726 mytext CODE >219:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-728 mytext CODE >220:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-72A mytext CODE >221:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-72C mytext CODE >223:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-72E mytext CODE >224:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-730 mytext CODE >225:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-732 mytext CODE >226:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-734 mytext CODE >233:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-736 mytext CODE >237:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-738 mytext CODE >239:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-73A mytext CODE >240:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-73C mytext CODE >241:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-73E mytext CODE >243:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-740 mytext CODE >244:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-742 mytext CODE >245:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-744 mytext CODE >246:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-746 mytext CODE >247:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-748 mytext CODE >250:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-74A mytext CODE >251:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-74C mytext CODE >252:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-74E mytext CODE >256:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-750 mytext CODE >257:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
-752 mytext CODE >258:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+61E mytext CODE >30:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+620 mytext CODE >32:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+622 mytext CODE >34:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+624 mytext CODE >35:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+626 mytext CODE >36:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+628 mytext CODE >39:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+62A mytext CODE >40:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+62C mytext CODE >41:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+62E mytext CODE >42:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+630 mytext CODE >47:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+632 mytext CODE >48:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+634 mytext CODE >49:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+636 mytext CODE >50:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+638 mytext CODE >53:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+63A mytext CODE >54:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+63C mytext CODE >55:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+63E mytext CODE >56:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+640 mytext CODE >57:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+642 mytext CODE >58:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+644 mytext CODE >59:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+646 mytext CODE >64:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+64A mytext CODE >65:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+64E mytext CODE >67:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+652 mytext CODE >68:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+656 mytext CODE >70:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+658 mytext CODE >70:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+65A mytext CODE >73:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+65C mytext CODE >73:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+65E mytext CODE >74:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+660 mytext CODE >74:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+662 mytext CODE >76:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+664 mytext CODE >77:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+666 mytext CODE >78:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+668 mytext CODE >80:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+66A mytext CODE >81:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+66C mytext CODE >82:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+66E mytext CODE >83:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+670 mytext CODE >86:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+672 mytext CODE >87:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+674 mytext CODE >88:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+676 mytext CODE >91:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+678 mytext CODE >92:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+67A mytext CODE >94:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+67C mytext CODE >94:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+67E mytext CODE >95:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+680 mytext CODE >95:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+682 mytext CODE >100:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+684 mytext CODE >100:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+686 mytext CODE >101:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+688 mytext CODE >104:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+68A mytext CODE >105:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+68C mytext CODE >106:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+68E mytext CODE >107:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+690 mytext CODE >109:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+692 mytext CODE >109:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+694 mytext CODE >110:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+696 mytext CODE >110:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+698 mytext CODE >112:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+69C mytext CODE >113:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6A0 mytext CODE >115:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6A2 mytext CODE >118:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6A4 mytext CODE >123:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6A6 mytext CODE >123:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6A8 mytext CODE >125:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6AA mytext CODE >126:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6AC mytext CODE >127:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6AE mytext CODE >128:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6B0 mytext CODE >129:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6B4 mytext CODE >130:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6B8 mytext CODE >131:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6BC mytext CODE >132:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6C0 mytext CODE >133:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6C2 mytext CODE >136:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6C4 mytext CODE >137:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6C6 mytext CODE >138:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6C8 mytext CODE >140:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6CA mytext CODE >141:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6CC mytext CODE >142:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6CE mytext CODE >146:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6D0 mytext CODE >146:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6D2 mytext CODE >147:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6D4 mytext CODE >153:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6D6 mytext CODE >154:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6D8 mytext CODE >155:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6DA mytext CODE >156:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6DC mytext CODE >159:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6DE mytext CODE >160:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6E0 mytext CODE >161:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6E2 mytext CODE >162:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6E4 mytext CODE >163:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6E6 mytext CODE >164:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6E8 mytext CODE >165:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6EA mytext CODE >175:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6EC mytext CODE >175:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6EE mytext CODE >176:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6F0 mytext CODE >177:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6F2 mytext CODE >178:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6F4 mytext CODE >179:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6F6 mytext CODE >180:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6FA mytext CODE >181:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+6FE mytext CODE >182:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+702 mytext CODE >183:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+706 mytext CODE >184:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+708 mytext CODE >186:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+70A mytext CODE >187:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+70C mytext CODE >188:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+70E mytext CODE >189:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+710 mytext CODE >190:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+712 mytext CODE >191:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+714 mytext CODE >193:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+716 mytext CODE >194:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+718 mytext CODE >195:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+71A mytext CODE >196:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+71C mytext CODE >198:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+71E mytext CODE >199:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+720 mytext CODE >200:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+722 mytext CODE >205:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+724 mytext CODE >206:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+726 mytext CODE >207:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+728 mytext CODE >208:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+72A mytext CODE >209:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+72C mytext CODE >211:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+72E mytext CODE >212:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+730 mytext CODE >213:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+732 mytext CODE >214:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+734 mytext CODE >221:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+736 mytext CODE >225:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+738 mytext CODE >227:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+73A mytext CODE >228:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+73C mytext CODE >229:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+73E mytext CODE >231:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+740 mytext CODE >232:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+742 mytext CODE >233:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+744 mytext CODE >234:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+746 mytext CODE >235:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+748 mytext CODE >238:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+74A mytext CODE >239:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+74C mytext CODE >240:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+74E mytext CODE >244:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+750 mytext CODE >245:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
+752 mytext CODE >246:/home/lum1na/MPLABXProjects/lab5-advanced.X/count_primes.asm
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -256,22 +256,22 @@ __Hudata_bank4 0 0 ABS 0 udata_bank4 build/default/debug/count_primes.o
 __Hudata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/count_primes.o
 __L__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/count_primes.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst build/default/debug/count_primes.o
-___sp 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
+___sp 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
 _main 754 0 CODE 0 text0 dist/default/debug/lab5-advanced.X.debug.o
-___stack_hi 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
-start 7FFC 0 CODE 0 init /tmp/xcXDElHLO/driver_tmp_9.o
+___stack_hi 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
+start 7FFC 0 CODE 0 init /tmp/xcXnFIhCN/driver_tmp_9.o
 __Hpowerup 0 0 CODE 0 powerup build/default/debug/count_primes.o
-__accesstop 80 0 ABS 0 - /tmp/xcXDElHLO/driver_tmp_9.o
-intlevel0 0 0 CODE 0 text /tmp/xcXDElHLO/driver_tmp_9.o
-intlevel1 0 0 CODE 0 text /tmp/xcXDElHLO/driver_tmp_9.o
-intlevel2 0 0 CODE 0 text /tmp/xcXDElHLO/driver_tmp_9.o
-intlevel3 0 0 CODE 0 text /tmp/xcXDElHLO/driver_tmp_9.o
+__accesstop 80 0 ABS 0 - /tmp/xcXnFIhCN/driver_tmp_9.o
+intlevel0 0 0 CODE 0 text /tmp/xcXnFIhCN/driver_tmp_9.o
+intlevel1 0 0 CODE 0 text /tmp/xcXnFIhCN/driver_tmp_9.o
+intlevel2 0 0 CODE 0 text /tmp/xcXnFIhCN/driver_tmp_9.o
+intlevel3 0 0 CODE 0 text /tmp/xcXnFIhCN/driver_tmp_9.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/count_primes.o
 __Hifardata 0 0 CODE 0 ifardata build/default/debug/count_primes.o
 __Hclrtext 0 0 ABS 0 clrtext build/default/debug/count_primes.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
 _count_primes 602 0 CODE 0 mytext build/default/debug/count_primes.o
 __Hintcode_body 0 0 ABS 0 intcode_body build/default/debug/count_primes.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/debug/count_primes.o
@@ -282,7 +282,7 @@ __Lintcodelo 18 0 CODE 0 intcodelo build/default/debug/count_primes.o
 start_initialization 778 0 CODE 0 cinit dist/default/debug/lab5-advanced.X.debug.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/count_primes.o
 ___rparam_used 1 0 ABS 0 - dist/default/debug/lab5-advanced.X.debug.o
-isa$xinst 0 0 ABS 0 - /tmp/xcXDElHLO/driver_tmp_9.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXnFIhCN/driver_tmp_9.o
 __Hbank0 0 0 ABS 0 bank0 build/default/debug/count_primes.o
 __Hbank1 0 0 ABS 0 bank1 build/default/debug/count_primes.o
 __Hbank2 0 0 ABS 0 bank2 build/default/debug/count_primes.o
@@ -366,12 +366,12 @@ __Lconfig 0 0 CONFIG 4 config build/default/debug/count_primes.o
 __Lsivt_hi 0 0 CODE 0 sivt_hi build/default/debug/count_primes.o
 __Lsivt_lo 18 0 CODE 0 sivt_lo build/default/debug/count_primes.o
 __Lfarbss 0 0 FARRAM 0 farbss build/default/debug/count_primes.o
-___inthi_stack_hi 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
+___inthi_stack_hi 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
 __Lfardata 0 0 FARRAM 0 fardata build/default/debug/count_primes.o
-isa$std 1 0 ABS 0 - /tmp/xcXDElHLO/driver_tmp_9.o
-stackhi 0 0 ABS 0 - /tmp/xcXDElHLO/driver_tmp_9.o
-stacklo 0 0 ABS 0 - /tmp/xcXDElHLO/driver_tmp_9.o
+isa$std 1 0 ABS 0 - /tmp/xcXnFIhCN/driver_tmp_9.o
+stackhi 0 0 ABS 0 - /tmp/xcXnFIhCN/driver_tmp_9.o
+stacklo 0 0 ABS 0 - /tmp/xcXnFIhCN/driver_tmp_9.o
 __Lintcode 8 0 CODE 0 intcode build/default/debug/count_primes.o
 __Lintret 0 0 ABS 0 intret build/default/debug/count_primes.o
 __Lirdata 0 0 CODE 0 irdata build/default/debug/count_primes.o
@@ -390,7 +390,7 @@ __Lrparam 0 0 COMRAM 1 rparam build/default/debug/count_primes.o
 __pcinit 778 0 CODE 0 cinit dist/default/debug/lab5-advanced.X.debug.o
 __ptext0 754 0 CODE 0 text0 dist/default/debug/lab5-advanced.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct build/default/debug/count_primes.o
-__ramtop 600 0 RAM 0 ramtop /tmp/xcXDElHLO/driver_tmp_9.o
+__ramtop 600 0 RAM 0 ramtop /tmp/xcXnFIhCN/driver_tmp_9.o
 __Lpowerup 0 0 CODE 0 powerup build/default/debug/count_primes.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data build/default/debug/count_primes.o
 __Ludata_bank0 0 0 ABS 0 udata_bank0 build/default/debug/count_primes.o
@@ -402,11 +402,11 @@ __Ludata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/count_primes.o
 __H__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/count_primes.o
 __psmallconst 600 0 SMALLCONST 0 smallconst dist/default/debug/lab5-advanced.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec build/default/debug/count_primes.o
-___heap_hi 0 0 ABS 0 - /tmp/xcXDElHLO/driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - /tmp/xcXDElHLO/driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXnFIhCN/driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXnFIhCN/driver_tmp_9.o
 ___param_bank 0 0 ABS 0 - dist/default/debug/lab5-advanced.X.debug.o
-___intlo_stack_hi 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack /tmp/xcXDElHLO/driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack /tmp/xcXnFIhCN/driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata build/default/debug/count_primes.o
 __end_of__initialization 778 0 CODE 0 cinit dist/default/debug/lab5-advanced.X.debug.o
 __Libigdata 0 0 CODE 0 ibigdata build/default/debug/count_primes.o

@@ -4793,7 +4793,7 @@ extern unsigned int count_primes(unsigned int n, unsigned int m);
 
 void main(void){
 
-    volatile unsigned int ans = count_primes(35677, 65521);
+    volatile unsigned int ans = count_primes(1,20);
     while(1);
     return;
 

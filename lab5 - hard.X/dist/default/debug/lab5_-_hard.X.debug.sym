@@ -88,12 +88,12 @@ __Linit 7FFC 0 CODE 0
 __Hintcodelo 18 0 CODE 0
 __Lintcodelo 18 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main 6C8 0 CODE 0
+__end_of_main 6CA 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 ___heap_lo 0 0 ABS 0
-end_of_initialization 6C8 0 CODE 0
+end_of_initialization 6CA 0 CODE 0
 __Hsivt_lo 18 0 CODE 0
 __Lsivt_lo 18 0 CODE 0
 __Hudata_bank0 0 0 ABS 0
@@ -124,7 +124,7 @@ ___stack_hi 0 0 STACK 2
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
 _mul_extended$1 3 0 COMRAM 1
-__end_of__initialization 6C8 0 CODE 0
+__end_of__initialization 6CA 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
@@ -161,7 +161,7 @@ __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-__pcinit 6C8 0 CODE 0
+__pcinit 6CA 0 CODE 0
 __ramtop 600 0 RAM 0
 __mediumconst 600 0 SMALLCONST 0
 __Hspace_3 F00002 0 ABS 0
@@ -186,11 +186,11 @@ intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
 ___inthi_stack_lo 0 0 STACK 2
-start_initialization 6C8 0 CODE 0
+start_initialization 6CA 0 CODE 0
 __Hudata_bank3 0 0 ABS 0
 __Ludata_bank3 0 0 ABS 0
 ___intlo_stack_lo 0 0 STACK 2
-__initialization 6C8 0 CODE 0
+__initialization 6CA 0 CODE 0
 __activetblptr 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
@@ -198,20 +198,20 @@ init 7FFC 7FFF CODE 7FFC 0
 smallconst 600 601 SMALLCONST 600 0
 edata F00000 F00001 EEDATA F00000 3
 cstackCOMRAM 1 4 COMRAM 1 1
-mytext 602 6CD CODE 602 0
+mytext 602 6CF CODE 602 0
 %locals
 dist/default/debug/lab5_-_hard.X.debug.o
-/tmp/xcXCcOlhP/driver_tmp_1.s
-401 6C8 0 CODE 0
-403 6C8 0 CODE 0
-406 6C8 0 CODE 0
-412 6C8 0 CODE 0
-414 6C8 0 CODE 0
-415 6CA 0 CODE 0
+/tmp/xcXHpChHg/driver_tmp_1.s
+401 6CA 0 CODE 0
+403 6CA 0 CODE 0
+406 6CA 0 CODE 0
+412 6CA 0 CODE 0
+414 6CA 0 CODE 0
+415 6CC 0 CODE 0
 main.c
 5 69E 0 CODE 0
 7 69E 0 CODE 0
-8 6C0 0 CODE 0
+8 6C2 0 CODE 0
 build/default/debug/mul_extended.o
 mul_extended.asm
 16 602 0 CODE 0

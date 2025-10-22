@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
 "3 main.c
-[; ;main.c: 3:     volatile long ans = mul_extended(-32768, 32767);
+[; ;main.c: 3:     volatile long ans = mul_extended(1, 20);
 [v _mul_extended `(l ~T0 @X0 0 ef2`i`i ]
 "52 /opt/microchip/xc8/v3.00/pic/include/proc/pic18f4520.h
 [; ;/opt/microchip/xc8/v3.00/pic/include/proc/pic18f4520.h: 52: __asm("PORTA equ 0F80h");
@@ -430,7 +430,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7
 [; ;main.c: 7: 
 [v _ans `Vl ~T0 @X0 1 a ]
-[e = _ans ( _mul_extended (2 , -> -U -> 32768 `l `i -> 32767 `i ]
+[e = _ans ( _mul_extended (2 , -> 1 `i -> 20 `i ]
 "8
 [; ;main.c: 8: 
 [e :U 305 ]
