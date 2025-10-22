@@ -11,9 +11,9 @@
 	
 	    ;;This is a 16-bit unsigned prime checker
 	    ;; put N in 0xA0, 0xAa
-	    ;; Resuli in 0x90, 
-	    ;; if [0x90] == 0x01 -> prime, 
-	    ;; if [0x90] == 0xFF -> not prime
+	    ;; Resuli in 0x95, 
+	    ;; if [0x95] == 0x01 -> prime, 
+	    ;; if [0x95] == 0xFF -> not prime
 	    
 	    MOVLF 0x01, 0xA0 ;N_HIGH
 	    MOVLF 0x07, 0xA1 ;N_LOW
@@ -29,7 +29,7 @@
 	    MOVFF 0xA1, 0xA8; N_low -> 0x008 for dividend
 	    MOVFF 0xA0, 0xA7; N_high -> 0x007 for dividend
 
-	    MOVLF 0x01, 0x90 ; Suppose it is a prime until we find its divisor
+	    MOVLF 0x01, 0x95 ; Suppose it is a prime until we find its divisor
 
 	    ;check if N_HIGH != 0 && N_low == 1 or 2
 	    MOVLF 0x01, 0xAE 
@@ -105,7 +105,7 @@
 
 	    ;; only get here if we found a divisor
 	notprime:
-	    MOVLF 0xFF, 0x90
+	    MOVLF 0xFF, 0x95
 	    RETURN
 
 
