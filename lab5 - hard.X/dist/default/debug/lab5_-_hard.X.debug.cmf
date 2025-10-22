@@ -21,7 +21,7 @@ text0 CODE 0 69E 69E 2A 1 2
 cstackCOMRAM COMRAM 1 1 1 4 1 1
 smallconst SMALLCONST 0 600 600 2 1 2
 config CONFIG 4 300000 300000 E 1 1
-$/tmp/xcXmKFABc/driver_tmp_9.o
+$/tmp/xcXCcOlhP/driver_tmp_9.o
 idloc IDLOC 5 200000 200000 8 1 1
 init CODE 0 7FFC 7FFC 4 1 2
 reset_vec CODE 0 0 0 4 1 2
@@ -64,85 +64,85 @@ MEDIUMCONST 6CE-7FFB 1
 # All other numeric values are in decimal.
 %LINETAB
 $build/default/debug/mul_extended.o
-602 mytext CODE >14:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-604 mytext CODE >16:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-606 mytext CODE >20:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-608 mytext CODE >21:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-60A mytext CODE >22:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-60C mytext CODE >23:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-60E mytext CODE >24:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-610 mytext CODE >26:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-612 mytext CODE >29:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-614 mytext CODE >31:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-616 mytext CODE >35:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-618 mytext CODE >36:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-61A mytext CODE >37:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-61C mytext CODE >38:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-61E mytext CODE >39:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-620 mytext CODE >41:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-622 mytext CODE >45:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-626 mytext CODE >46:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-62A mytext CODE >47:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-62E mytext CODE >48:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-632 mytext CODE >50:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-634 mytext CODE >51:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-636 mytext CODE >52:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-638 mytext CODE >53:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-63A mytext CODE >54:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-63C mytext CODE >55:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-63E mytext CODE >56:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-640 mytext CODE >59:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-642 mytext CODE >60:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-644 mytext CODE >61:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-646 mytext CODE >62:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-648 mytext CODE >63:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-64A mytext CODE >64:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-64C mytext CODE >65:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-650 mytext CODE >87:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-652 mytext CODE >88:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-654 mytext CODE >90:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-656 mytext CODE >91:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-658 mytext CODE >93:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-65A mytext CODE >94:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-65C mytext CODE >96:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-65E mytext CODE >97:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-660 mytext CODE >99:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-662 mytext CODE >101:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-664 mytext CODE >102:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-666 mytext CODE >104:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-668 mytext CODE >105:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-66A mytext CODE >107:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-66C mytext CODE >108:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-66E mytext CODE >110:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-670 mytext CODE >111:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-672 mytext CODE >113:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-674 mytext CODE >114:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-676 mytext CODE >118:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-678 mytext CODE >120:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-67A mytext CODE >123:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-67C mytext CODE >124:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-67E mytext CODE >125:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-680 mytext CODE >126:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-682 mytext CODE >127:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-684 mytext CODE >128:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-686 mytext CODE >129:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-688 mytext CODE >130:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-68A mytext CODE >131:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-68C mytext CODE >134:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-690 mytext CODE >135:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-694 mytext CODE >136:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-698 mytext CODE >137:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
-69C mytext CODE >139:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+602 mytext CODE >16:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+604 mytext CODE >18:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+606 mytext CODE >22:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+608 mytext CODE >23:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+60A mytext CODE >24:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+60C mytext CODE >25:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+60E mytext CODE >26:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+610 mytext CODE >28:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+612 mytext CODE >31:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+614 mytext CODE >33:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+616 mytext CODE >37:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+618 mytext CODE >38:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+61A mytext CODE >39:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+61C mytext CODE >40:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+61E mytext CODE >41:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+620 mytext CODE >43:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+622 mytext CODE >47:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+626 mytext CODE >48:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+62A mytext CODE >49:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+62E mytext CODE >50:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+632 mytext CODE >52:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+634 mytext CODE >53:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+636 mytext CODE >54:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+638 mytext CODE >55:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+63A mytext CODE >56:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+63C mytext CODE >57:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+63E mytext CODE >58:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+640 mytext CODE >61:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+642 mytext CODE >62:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+644 mytext CODE >63:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+646 mytext CODE >64:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+648 mytext CODE >65:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+64A mytext CODE >66:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+64C mytext CODE >67:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+650 mytext CODE >89:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+652 mytext CODE >90:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+654 mytext CODE >92:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+656 mytext CODE >93:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+658 mytext CODE >95:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+65A mytext CODE >96:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+65C mytext CODE >98:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+65E mytext CODE >99:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+660 mytext CODE >101:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+662 mytext CODE >103:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+664 mytext CODE >104:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+666 mytext CODE >106:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+668 mytext CODE >107:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+66A mytext CODE >109:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+66C mytext CODE >110:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+66E mytext CODE >112:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+670 mytext CODE >113:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+672 mytext CODE >115:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+674 mytext CODE >116:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+676 mytext CODE >120:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+678 mytext CODE >122:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+67A mytext CODE >125:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+67C mytext CODE >126:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+67E mytext CODE >127:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+680 mytext CODE >128:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+682 mytext CODE >129:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+684 mytext CODE >130:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+686 mytext CODE >131:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+688 mytext CODE >132:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+68A mytext CODE >133:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+68C mytext CODE >136:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+690 mytext CODE >137:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+694 mytext CODE >138:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+698 mytext CODE >139:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
+69C mytext CODE >141:/home/lum1na/MPLABXProjects/lab5 - hard.X/mul_extended.asm
 $dist/default/debug/lab5_-_hard.X.debug.o
 69E text0 CODE >5:/home/lum1na/MPLABXProjects/lab5 - hard.X/main.c
 69E text0 CODE >7:/home/lum1na/MPLABXProjects/lab5 - hard.X/main.c
 6C0 text0 CODE >8:/home/lum1na/MPLABXProjects/lab5 - hard.X/main.c
-6C8 cinit CODE >401:/tmp/xcXmKFABc/driver_tmp_1.s
-6C8 cinit CODE >403:/tmp/xcXmKFABc/driver_tmp_1.s
-6C8 cinit CODE >406:/tmp/xcXmKFABc/driver_tmp_1.s
-6C8 cinit CODE >412:/tmp/xcXmKFABc/driver_tmp_1.s
-6C8 cinit CODE >414:/tmp/xcXmKFABc/driver_tmp_1.s
-6CA cinit CODE >415:/tmp/xcXmKFABc/driver_tmp_1.s
+6C8 cinit CODE >401:/tmp/xcXCcOlhP/driver_tmp_1.s
+6C8 cinit CODE >403:/tmp/xcXCcOlhP/driver_tmp_1.s
+6C8 cinit CODE >406:/tmp/xcXCcOlhP/driver_tmp_1.s
+6C8 cinit CODE >412:/tmp/xcXCcOlhP/driver_tmp_1.s
+6C8 cinit CODE >414:/tmp/xcXCcOlhP/driver_tmp_1.s
+6CA cinit CODE >415:/tmp/xcXCcOlhP/driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -172,22 +172,22 @@ __Hudata_bank4 0 0 ABS 0 udata_bank4 build/default/debug/mul_extended.o
 __Hudata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/mul_extended.o
 __L__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/mul_extended.o
 __Lsmallconst 600 0 SMALLCONST 0 smallconst build/default/debug/mul_extended.o
-___sp 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
+___sp 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
 _main 69E 0 CODE 0 text0 dist/default/debug/lab5_-_hard.X.debug.o
-___stack_hi 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
-start 7FFC 0 CODE 0 init /tmp/xcXmKFABc/driver_tmp_9.o
+___stack_hi 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
+start 7FFC 0 CODE 0 init /tmp/xcXCcOlhP/driver_tmp_9.o
 __Hpowerup 0 0 CODE 0 powerup build/default/debug/mul_extended.o
-__accesstop 80 0 ABS 0 - /tmp/xcXmKFABc/driver_tmp_9.o
-intlevel0 0 0 CODE 0 text /tmp/xcXmKFABc/driver_tmp_9.o
-intlevel1 0 0 CODE 0 text /tmp/xcXmKFABc/driver_tmp_9.o
-intlevel2 0 0 CODE 0 text /tmp/xcXmKFABc/driver_tmp_9.o
-intlevel3 0 0 CODE 0 text /tmp/xcXmKFABc/driver_tmp_9.o
+__accesstop 80 0 ABS 0 - /tmp/xcXCcOlhP/driver_tmp_9.o
+intlevel0 0 0 CODE 0 text /tmp/xcXCcOlhP/driver_tmp_9.o
+intlevel1 0 0 CODE 0 text /tmp/xcXCcOlhP/driver_tmp_9.o
+intlevel2 0 0 CODE 0 text /tmp/xcXCcOlhP/driver_tmp_9.o
+intlevel3 0 0 CODE 0 text /tmp/xcXCcOlhP/driver_tmp_9.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/mul_extended.o
 __Hifardata 0 0 CODE 0 ifardata build/default/debug/mul_extended.o
 __Hclrtext 0 0 ABS 0 clrtext build/default/debug/mul_extended.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
 __Hintcode_body 0 0 ABS 0 intcode_body build/default/debug/mul_extended.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/debug/mul_extended.o
 main@ans 1 0 COMRAM 1 cstackCOMRAM dist/default/debug/lab5_-_hard.X.debug.o
@@ -197,7 +197,7 @@ __Lintcodelo 18 0 CODE 0 intcodelo build/default/debug/mul_extended.o
 start_initialization 6C8 0 CODE 0 cinit dist/default/debug/lab5_-_hard.X.debug.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/debug/mul_extended.o
 ___rparam_used 1 0 ABS 0 - dist/default/debug/lab5_-_hard.X.debug.o
-isa$xinst 0 0 ABS 0 - /tmp/xcXmKFABc/driver_tmp_9.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXCcOlhP/driver_tmp_9.o
 __Hbank0 0 0 ABS 0 bank0 build/default/debug/mul_extended.o
 __Hbank1 0 0 ABS 0 bank1 build/default/debug/mul_extended.o
 __Hbank2 0 0 ABS 0 bank2 build/default/debug/mul_extended.o
@@ -283,12 +283,12 @@ __Lconfig 0 0 CONFIG 4 config build/default/debug/mul_extended.o
 __Lsivt_hi 0 0 CODE 0 sivt_hi build/default/debug/mul_extended.o
 __Lsivt_lo 18 0 CODE 0 sivt_lo build/default/debug/mul_extended.o
 __Lfarbss 0 0 FARRAM 0 farbss build/default/debug/mul_extended.o
-___inthi_stack_hi 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
+___inthi_stack_hi 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
 __Lfardata 0 0 FARRAM 0 fardata build/default/debug/mul_extended.o
-isa$std 1 0 ABS 0 - /tmp/xcXmKFABc/driver_tmp_9.o
-stackhi 0 0 ABS 0 - /tmp/xcXmKFABc/driver_tmp_9.o
-stacklo 0 0 ABS 0 - /tmp/xcXmKFABc/driver_tmp_9.o
+isa$std 1 0 ABS 0 - /tmp/xcXCcOlhP/driver_tmp_9.o
+stackhi 0 0 ABS 0 - /tmp/xcXCcOlhP/driver_tmp_9.o
+stacklo 0 0 ABS 0 - /tmp/xcXCcOlhP/driver_tmp_9.o
 __Lintcode 8 0 CODE 0 intcode build/default/debug/mul_extended.o
 __Lintret 0 0 ABS 0 intret build/default/debug/mul_extended.o
 __Lirdata 0 0 CODE 0 irdata build/default/debug/mul_extended.o
@@ -307,7 +307,7 @@ __Lrparam 0 0 COMRAM 1 rparam build/default/debug/mul_extended.o
 __pcinit 6C8 0 CODE 0 cinit dist/default/debug/lab5_-_hard.X.debug.o
 __ptext0 69E 0 CODE 0 text0 dist/default/debug/lab5_-_hard.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct build/default/debug/mul_extended.o
-__ramtop 600 0 RAM 0 ramtop /tmp/xcXmKFABc/driver_tmp_9.o
+__ramtop 600 0 RAM 0 ramtop /tmp/xcXCcOlhP/driver_tmp_9.o
 __Lpowerup 0 0 CODE 0 powerup build/default/debug/mul_extended.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data build/default/debug/mul_extended.o
 __Ludata_bank0 0 0 ABS 0 udata_bank0 build/default/debug/mul_extended.o
@@ -319,11 +319,11 @@ __Ludata_bank5 0 0 ABS 0 udata_bank5 build/default/debug/mul_extended.o
 __H__absolute__ 0 0 ABS 0 __absolute__ build/default/debug/mul_extended.o
 __psmallconst 600 0 SMALLCONST 0 smallconst dist/default/debug/lab5_-_hard.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec build/default/debug/mul_extended.o
-___heap_hi 0 0 ABS 0 - /tmp/xcXmKFABc/driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - /tmp/xcXmKFABc/driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXCcOlhP/driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXCcOlhP/driver_tmp_9.o
 ___param_bank 0 0 ABS 0 - dist/default/debug/lab5_-_hard.X.debug.o
-___intlo_stack_hi 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack /tmp/xcXmKFABc/driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack /tmp/xcXCcOlhP/driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata build/default/debug/mul_extended.o
 __end_of__initialization 6C8 0 CODE 0 cinit dist/default/debug/lab5_-_hard.X.debug.o
 __Libigdata 0 0 CODE 0 ibigdata build/default/debug/mul_extended.o

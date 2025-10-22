@@ -4121,6 +4121,8 @@ MOVLF macro literal, address
     MOVWF address
 endm
 
+;; For midtrem: This can be rewritten to a 16 bit Multiplier
+
 _mul_extended:
 
 

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                                           Thu Oct 16 09:56:39 2025
+                                                                                                           Wed Oct 22 11:57:11 2025
 
 
      1                           	processor	18F4520
@@ -3758,7 +3758,7 @@ Microchip MPLAB XC8 Assembler V3.00 build 20241204225717
 
 
 Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                               Thu Oct 16 09:56:39 2025
+Symbol Table                                                                                               Wed Oct 22 11:57:11 2025
 
                          mul 0640                          WREG 0FE8                          next 0612  
                         stop 068C                        WDTCON 0FD1                        STATUS 0FD8  

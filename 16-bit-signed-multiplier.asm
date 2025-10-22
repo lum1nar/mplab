@@ -144,7 +144,7 @@
 	    ADDWFC 0x90, F
 
 	stop:
-	    ; Done!, Clear!
+	    ; Done!, Clean Up!
 	    CLRF 0x80
 	    CLRF 0x81
 	    CLRF 0x82
@@ -156,6 +156,4 @@
 	    CLRF 0x8A
 	    NOP 
 	    end
-
-	  
 

@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=/opt/microchip/xc8/v3.00/pic/dat/20241204225717_en.msgs -cn \
   -h+dist/default/debug/lab5_-_hard.X.debug.sym \
   --cmf=dist/default/debug/lab5_-_hard.X.debug.cmf -z -Q18F4520 \
-  -o/tmp/xcXmKFABc/driver_tmp_3.o --defsym=__MPLAB_BUILD=1 \
+  -o/tmp/xcXCcOlhP/driver_tmp_3.o --defsym=__MPLAB_BUILD=1 \
   --fixupoverflow=error -Mdist/default/debug/lab5_-_hard.X.debug.map \
-  --md=/tmp/xcXmKFABc/driver_tmp_0.dat -E1 -ver=XC8 Compiler \
+  --md=/tmp/xcXCcOlhP/driver_tmp_0.dat -E1 -ver=XC8 Compiler \
   -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0600h-06FFhx122 \
   -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh -AABS1=00h-05FFh \
   -ABIGRAM=01h-05FFh -ARAM=080h-0FFh,0100h-01FFhx5 -ABANK0=080h-0FFh \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  /tmp/xcXmKFABc/driver_tmp_9.o dist/default/debug/lab5_-_hard.X.debug.o \
+  /tmp/xcXCcOlhP/driver_tmp_9.o dist/default/debug/lab5_-_hard.X.debug.o \
   build/default/debug/mul_extended.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 18F4520
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXmKFABc/driver_tmp_9.o
+/tmp/xcXCcOlhP/driver_tmp_9.o
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                               7FFC     7FFC        4     3FFE       0
